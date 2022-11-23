@@ -41,16 +41,14 @@ public class Label : MonoBehaviour
         {            
             child0.SetActive(true);
             child1.SetActive(true);
-
-            typeText(tmp,"Collesium");
+            typeText(tmp,str);
 
             if (triggerObject != null)
             {
-                triggerObject.GetComponent<Collesium>().OnTriggerEnter2D(collision);
+                scaleUp(triggerObject);
             }
         }
     }
-
 
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -62,7 +60,7 @@ public class Label : MonoBehaviour
 
             if (triggerObject != null)
             {
-                triggerObject.GetComponent<Collesium>().OnTriggerExit2D(collision);
+                scaleDown(triggerObject);
             }
         }
     }
@@ -75,6 +73,23 @@ public class Label : MonoBehaviour
         {
             tmp.text = text;
         });
+    }
+
+
+
+
+    public void scaleUp(GameObject gameObj)
+    {
+        gameObj.transform.DOScale(new Vector3(1f, 1f, 1f), 1);
+        gameObj.transform.DOLocalMoveY(-4.65f, 1);
+        gameObj.GetComponent<SpriteRenderer>().DOColor(new Color(1f, 1f, 1f), 1);
+    }
+
+    public void scaleDown(GameObject gameObj)
+    {
+        gameObj.transform.DOScale(new Vector3(0.9f, 0.9f, 0.9f), 1);
+        gameObj.transform.DOLocalMoveY(-5f, 1);
+        gameObj.GetComponent<SpriteRenderer>().DOColor(new Color(0.627f, 0.627f, 0.627f), 1);
     }
 
 }
