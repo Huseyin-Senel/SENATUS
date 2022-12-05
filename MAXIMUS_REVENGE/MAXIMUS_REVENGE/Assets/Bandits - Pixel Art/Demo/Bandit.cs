@@ -60,6 +60,18 @@ public class Bandit : MonoBehaviour {
 
 
 
+        if (GetComponent<Rigidbody2D>().velocity.x == 0)
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
+
+
         AIFindTarget();
         AIFindPath();
     }
@@ -114,15 +126,12 @@ public class Bandit : MonoBehaviour {
         while (time > 0)
         {
             time -= Time.deltaTime;
-            
-            
-                // Swap direction of sprite depending on walk direction
+                 
                 if (inputX > 0)
-                    transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
-                else if (inputX < 0)
                     transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+                else if (inputX < 0)
+                    transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
 
-                // Move
                 m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
         }     
 
@@ -131,7 +140,6 @@ public class Bandit : MonoBehaviour {
 
     private void AIFindTarget()
     {
-
         float distance = 100000;
         foreach (GameObject gm in env.allCharacters)
         {
@@ -170,11 +178,7 @@ public class Bandit : MonoBehaviour {
                 ustSatirTimer = 1.1f;
                 satirdaKal = true;
                 yukariCik = true;
-            }
-
-
-            
-
+            }     
         }
         else if(attackTarget.transform.position.y > this.transform.position.y - 1f   &&  attackTarget.transform.position.y < this.transform.position.y + 2.3f)  //bulunduğu satir
         {
@@ -221,7 +225,7 @@ public class Bandit : MonoBehaviour {
                 }
                 else if (jumpTarget.transform.position.x - 0.1f > this.transform.position.x)
                 {
-                    AImoveSagSol(1);
+                    AImoveSagSol(+1);
                 }
                 else
                 {
@@ -238,11 +242,11 @@ public class Bandit : MonoBehaviour {
             {
                 if (attackTarget.transform.position.x + 1.2f < this.transform.position.x)
                 {
-                    AImoveSagSol(-0.5f);
+                    AImoveSagSol(-1f);
                 }
                 else if (attackTarget.transform.position.x - 1.2f > this.transform.position.x)
                 {
-                    AImoveSagSol(0.5f);
+                    AImoveSagSol(+1f);
                 }
             }
         }
@@ -310,18 +314,13 @@ public class Bandit : MonoBehaviour {
         }
     }
 
-
     private void AImoveSagSol(float inputX)
     {
-        // -- Handle input and movement --
-
-        // Swap direction of sprite depending on walk direction
         if (inputX > 0)
             transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         else if (inputX < 0)
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
 
-        // Move
         m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
 
 
@@ -329,6 +328,13 @@ public class Bandit : MonoBehaviour {
             m_animator.SetInteger("AnimState", 2);
 
     }
+
+
+
+
+
+
+
 
 
     private void movement()

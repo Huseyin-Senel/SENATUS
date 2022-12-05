@@ -48,6 +48,17 @@ public class HeroKnight : MonoBehaviour {
     void Update ()
     {
         movement();
+
+
+        if (GetComponent<Rigidbody2D>().velocity.x == 0)
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
     }
 
     // Animation Events
