@@ -668,6 +668,12 @@ TextureImporter:
   - first:
       213: 6085851465695505595
     second: GUI_4x_sliced_scaled_45
+  - first:
+      213: 3985157630704816528
+    second: GUI_4x_sliced_scaled_46
+  - first:
+      213: 5251547073956189950
+    second: GUI_4x_sliced_scaled_56
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -686,7 +692,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -712,7 +718,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -731,7 +737,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -743,7 +749,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -755,7 +761,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -1933,7 +1939,7 @@ TextureImporter:
         height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 145, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -3671,9 +3677,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 760
+        y: 840
         width: 160
-        height: 240
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3692,9 +3698,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 880
+        y: 900
         width: 480
-        height: 120
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3713,9 +3719,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 700
-        y: 760
+        y: 840
         width: 160
-        height: 240
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3986,9 +3992,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 760
+        y: 699
         width: 480
-        height: 120
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5187,7 +5193,7 @@ TextureImporter:
         width: 160
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5195,6 +5201,48 @@ TextureImporter:
       bones: []
       spriteID: bbc2290f9a9457450800000000000000
       internalID: 6085851465695505595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_sliced_scaled_46
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 760
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091191830cf1e4730800000000000000
+      internalID: 3985157630704816528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_sliced_scaled_56
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 760
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef696686d3e31e840800000000000000
+      internalID: 5251547073956189950
       vertices: []
       indices: 
       edges: []
