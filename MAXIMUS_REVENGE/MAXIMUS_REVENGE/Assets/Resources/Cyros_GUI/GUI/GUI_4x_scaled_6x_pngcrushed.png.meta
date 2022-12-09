@@ -1,0 +1,1944 @@
+fileFormatVersion: 2
+guid: 65567ebe8dd3c754abe9e72c28040b7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2627944317011308673
+    second: GUI_4x_scaled_6x_pngcrushed_0
+  - first:
+      213: 2435304245522634847
+    second: GUI_4x_scaled_6x_pngcrushed_1
+  - first:
+      213: 8346963877901826974
+    second: GUI_4x_scaled_6x_pngcrushed_2
+  - first:
+      213: -620064871056081480
+    second: GUI_4x_scaled_6x_pngcrushed_4
+  - first:
+      213: -5673331321234862022
+    second: GUI_4x_scaled_6x_pngcrushed_6
+  - first:
+      213: 9043130982795467703
+    second: GUI_4x_scaled_6x_pngcrushed_7
+  - first:
+      213: 1549492487987728277
+    second: GUI_4x_scaled_6x_pngcrushed_8
+  - first:
+      213: -1387676523023368938
+    second: GUI_4x_scaled_6x_pngcrushed_9
+  - first:
+      213: -6301216257182816257
+    second: GUI_4x_scaled_6x_pngcrushed_10
+  - first:
+      213: 540259510995045032
+    second: GUI_4x_scaled_6x_pngcrushed_11
+  - first:
+      213: -6841531108917055819
+    second: GUI_4x_scaled_6x_pngcrushed_3
+  - first:
+      213: 985336111224747503
+    second: GUI_4x_scaled_6x_pngcrushed_13
+  - first:
+      213: 5455837704286260614
+    second: GUI_4x_scaled_6x_pngcrushed_5
+  - first:
+      213: -6619848426023045368
+    second: GUI_4x_scaled_6x_pngcrushed_14
+  - first:
+      213: -218973131614421882
+    second: GUI_4x_scaled_6x_pngcrushed_15
+  - first:
+      213: -5926006774397234127
+    second: GUI_4x_scaled_6x_pngcrushed_16
+  - first:
+      213: -6042398144729332156
+    second: GUI_4x_scaled_6x_pngcrushed_17
+  - first:
+      213: 7481319013157984557
+    second: GUI_4x_scaled_6x_pngcrushed_18
+  - first:
+      213: 3653764704713761871
+    second: GUI_4x_scaled_6x_pngcrushed_19
+  - first:
+      213: 5120028030904080177
+    second: GUI_4x_scaled_6x_pngcrushed_20
+  - first:
+      213: 3275758116796420515
+    second: GUI_4x_scaled_6x_pngcrushed_21
+  - first:
+      213: 6621183226315707202
+    second: GUI_4x_scaled_6x_pngcrushed_22
+  - first:
+      213: 2508614269346599577
+    second: GUI_4x_scaled_6x_pngcrushed_23
+  - first:
+      213: -5401475437628453336
+    second: GUI_4x_scaled_6x_pngcrushed_24
+  - first:
+      213: 3316873748522595570
+    second: GUI_4x_scaled_6x_pngcrushed_25
+  - first:
+      213: -8841636154001268273
+    second: GUI_4x_scaled_6x_pngcrushed_26
+  - first:
+      213: 7117419272072639073
+    second: GUI_4x_scaled_6x_pngcrushed_27
+  - first:
+      213: 1939560373796108210
+    second: GUI_4x_scaled_6x_pngcrushed_28
+  - first:
+      213: -5376220695477182054
+    second: GUI_4x_scaled_6x_pngcrushed_29
+  - first:
+      213: -5229186892063345481
+    second: GUI_4x_scaled_6x_pngcrushed_12
+  - first:
+      213: -8204515337251351108
+    second: GUI_4x_scaled_6x_pngcrushed_30
+  - first:
+      213: -3388764654885618631
+    second: GUI_4x_scaled_6x_pngcrushed_31
+  - first:
+      213: 1897371361461450737
+    second: GUI_4x_scaled_6x_pngcrushed_32
+  - first:
+      213: 6458371244975490743
+    second: GUI_4x_scaled_6x_pngcrushed_33
+  - first:
+      213: -7907985127297485646
+    second: GUI_4x_scaled_6x_pngcrushed_34
+  - first:
+      213: 5457180578705810179
+    second: GUI_4x_scaled_6x_pngcrushed_35
+  - first:
+      213: 7398994895673779782
+    second: GUI_4x_scaled_6x_pngcrushed_36
+  - first:
+      213: 1879731505804780268
+    second: GUI_4x_scaled_6x_pngcrushed_37
+  - first:
+      213: 1456335083071247111
+    second: GUI_4x_scaled_6x_pngcrushed_38
+  - first:
+      213: 3478601244648881186
+    second: GUI_4x_scaled_6x_pngcrushed_39
+  - first:
+      213: -7456467137970554248
+    second: GUI_4x_scaled_6x_pngcrushed_40
+  - first:
+      213: 2056246417334478348
+    second: GUI_4x_scaled_6x_pngcrushed_41
+  - first:
+      213: -657599009026494177
+    second: GUI_4x_scaled_6x_pngcrushed_42
+  - first:
+      213: 4565183146874045372
+    second: GUI_4x_scaled_6x_pngcrushed_43
+  - first:
+      213: 2942384208258304161
+    second: GUI_4x_scaled_6x_pngcrushed_44
+  - first:
+      213: 7866027825351280360
+    second: GUI_4x_scaled_6x_pngcrushed_45
+  - first:
+      213: 7367203702655482313
+    second: GUI_4x_scaled_6x_pngcrushed_46
+  - first:
+      213: -4728034032055715848
+    second: GUI_4x_scaled_6x_pngcrushed_47
+  - first:
+      213: -664630984203367048
+    second: GUI_4x_scaled_6x_pngcrushed_48
+  - first:
+      213: -1688176702074167928
+    second: GUI_4x_scaled_6x_pngcrushed_49
+  - first:
+      213: 7798597792592289146
+    second: GUI_4x_scaled_6x_pngcrushed_50
+  - first:
+      213: 4446938366283069785
+    second: GUI_4x_scaled_6x_pngcrushed_51
+  - first:
+      213: -7814665656978819190
+    second: GUI_4x_scaled_6x_pngcrushed_52
+  - first:
+      213: 6593063967938099082
+    second: GUI_4x_scaled_6x_pngcrushed_53
+  - first:
+      213: -8550335158480459343
+    second: GUI_4x_scaled_6x_pngcrushed_54
+  - first:
+      213: -4684260104282614419
+    second: GUI_4x_scaled_6x_pngcrushed_55
+  - first:
+      213: -8457898334493768399
+    second: GUI_4x_scaled_6x_pngcrushed_56
+  - first:
+      213: -5561318665694210596
+    second: GUI_4x_scaled_6x_pngcrushed_57
+  - first:
+      213: -9191441887914589215
+    second: GUI_4x_scaled_6x_pngcrushed_58
+  - first:
+      213: -5173161516476153840
+    second: GUI_4x_scaled_6x_pngcrushed_59
+  - first:
+      213: -6235950539605223149
+    second: GUI_4x_scaled_6x_pngcrushed_60
+  - first:
+      213: 9010573851061571341
+    second: GUI_4x_scaled_6x_pngcrushed_61
+  - first:
+      213: -8159045887793184777
+    second: GUI_4x_scaled_6x_pngcrushed_62
+  - first:
+      213: -8590906556815367390
+    second: GUI_4x_scaled_6x_pngcrushed_63
+  - first:
+      213: -2206543794604278797
+    second: GUI_4x_scaled_6x_pngcrushed_64
+  - first:
+      213: 6091016352572027666
+    second: GUI_4x_scaled_6x_pngcrushed_65
+  - first:
+      213: 9127848307987177683
+    second: GUI_4x_scaled_6x_pngcrushed_66
+  - first:
+      213: -2960866196815272874
+    second: GUI_4x_scaled_6x_pngcrushed_67
+  - first:
+      213: 7856715806826767169
+    second: GUI_4x_scaled_6x_pngcrushed_68
+  - first:
+      213: -6516295019296693331
+    second: GUI_4x_scaled_6x_pngcrushed_69
+  - first:
+      213: -2364039526480203294
+    second: GUI_4x_scaled_6x_pngcrushed_70
+  - first:
+      213: -370011969150664458
+    second: GUI_4x_scaled_6x_pngcrushed_71
+  - first:
+      213: 5678227947834189369
+    second: GUI_4x_scaled_6x_pngcrushed_72
+  - first:
+      213: 8926011721277797111
+    second: GUI_4x_scaled_6x_pngcrushed_73
+  - first:
+      213: 6639134158580342760
+    second: GUI_4x_scaled_6x_pngcrushed_74
+  - first:
+      213: -719123737679671261
+    second: GUI_4x_scaled_6x_pngcrushed_75
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3520
+        width: 960
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18037f0de65587420800000000000000
+      internalID: 2627944317011308673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3520
+        width: 960
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58906afe40fbc120800000000000000
+      internalID: 2435304245522634847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3520
+        width: 960
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bfa5f3c6f56d370800000000000000
+      internalID: 8346963877901826974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdf007f8461567f0800000000000000
+      internalID: -620064871056081480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30d2b0d8374441b0800000000000000
+      internalID: -5673331321234862022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3200
+        width: 960
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb5ade57b7af7d70800000000000000
+      internalID: 9043130982795467703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f05a05537e08510800000000000000
+      internalID: 1549492487987728277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2320
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dfa06fd8bfdbce0800000000000000
+      internalID: -1387676523023368938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2360
+        width: 801
+        height: 760
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7a3b903359d88a0800000000000000
+      internalID: -6301216257182816257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 2440
+        width: 560
+        height: 560
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aac26fa9236f7700800000000000000
+      internalID: 540259510995045032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3520
+        width: 960
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bee63554bffd01a0800000000000000
+      internalID: -6841531108917055819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3520
+        width: 960
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe57aedf8fd9cad00800000000000000
+      internalID: 985336111224747503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d4a2c5c7707bb40800000000000000
+      internalID: 5455837704286260614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807b7f31ee29124a0800000000000000
+      internalID: -6619848426023045368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c74c2d81d06fcf0800000000000000
+      internalID: -218973131614421882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3200
+        width: 960
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1349e7b6c3892cda0800000000000000
+      internalID: -5926006774397234127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446cdefb6e6152ca0800000000000000
+      internalID: -6042398144729332156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2958a6310cf2d760800000000000000
+      internalID: 7481319013157984557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44e255f3a7c4b230800000000000000
+      internalID: 3653764704713761871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1379416fd5efd0740800000000000000
+      internalID: 5120028030904080177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3520
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1d0c9c6a4d57d20800000000000000
+      internalID: 3275758116796420515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3840
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2439255501b23eb50800000000000000
+      internalID: 6621183226315707202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4160
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99251e2036360d220800000000000000
+      internalID: 2508614269346599577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 4160
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e882d25ba1a05b0800000000000000
+      internalID: -5401475437628453336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 4160
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4f189c917e70e20800000000000000
+      internalID: 3316873748522595570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 4160
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1e08f43c23c4580800000000000000
+      internalID: -8841636154001268273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3840
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162b8654e1726c260800000000000000
+      internalID: 7117419272072639073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 3840
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b77a8c32e3baea10800000000000000
+      internalID: 1939560373796108210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3840
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91aafb03c3d365b0800000000000000
+      internalID: -5376220695477182054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3520
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b47f622a323e67b0800000000000000
+      internalID: -5229186892063345481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 3520
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb593e825c4b32e80800000000000000
+      internalID: -8204515337251351108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3520
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cb4263080b8f0d0800000000000000
+      internalID: -3388764654885618631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_32
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7b8e65331d45a10800000000000000
+      internalID: 1897371361461450737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_33
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b68c5ced6eb0a950800000000000000
+      internalID: 6458371244975490743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_34
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3200
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b47c5ecc61314290800000000000000
+      internalID: -7907985127297485646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_35
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 2440
+        width: 560
+        height: 560
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303abeca2dccbbb40800000000000000
+      internalID: 5457180578705810179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_36
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6466093f7a28ea660800000000000000
+      internalID: 7398994895673779782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_37
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2aa9468d5261a10800000000000000
+      internalID: 1879731505804780268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_38
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7039664ca01f53410800000000000000
+      internalID: 1456335083071247111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_39
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c378ec669764030800000000000000
+      internalID: 3478601244648881186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_40
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a34e1e4ae458890800000000000000
+      internalID: -7456467137970554248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_41
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0624ebd831498c10800000000000000
+      internalID: 2056246417334478348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11b3567f2dbfd6f0800000000000000
+      internalID: -657599009026494177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_43
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 960
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3070c72e9ca5f30800000000000000
+      internalID: 4565183146874045372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 1600
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a884f519d275d820800000000000000
+      internalID: 2942384208258304161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_45
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 640
+        width: 960
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6c66391aeb92d60800000000000000
+      internalID: 7866027825351280360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 760
+        width: 960
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9f8b40cb09d3660800000000000000
+      internalID: 7367203702655482313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_47
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 840
+        width: 960
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f77c591916a26eb0800000000000000
+      internalID: -4728034032055715848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d07d724a1c6c6f0800000000000000
+      internalID: -664630984203367048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d57cadb346298e0800000000000000
+      internalID: -1688176702074167928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 320
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ddb95af5f2a3c60800000000000000
+      internalID: 7798597792592289146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 320
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959bb5c12e2b6bd30800000000000000
+      internalID: 4446938366283069785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8735552dfabc8390800000000000000
+      internalID: -7814665656978819190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87b06e4fb44f7b50800000000000000
+      internalID: 6593063967938099082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_54
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b92d38997b175980800000000000000
+      internalID: -8550335158480459343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 160
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6553b0e04a2efeb0800000000000000
+      internalID: -4684260104282614419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_56
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 160
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1358122d6428f9a80800000000000000
+      internalID: -8457898334493768399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_57
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd51c80832a32d2b0800000000000000
+      internalID: -5561318665694210596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_58
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e384312d40717080800000000000000
+      internalID: -9191441887914589215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_59
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 160
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010c7b4620d3538b0800000000000000
+      internalID: -5173161516476153840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_60
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319dce116047579a0800000000000000
+      internalID: -6235950539605223149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_61
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fc2fe6d2dfb0d70800000000000000
+      internalID: 9010573851061571341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_62
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffb9f75efe35ce80800000000000000
+      internalID: -8159045887793184777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_63
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223227ec008f6c880800000000000000
+      internalID: -8590906556815367390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_64
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbf44d0c18c061e0800000000000000
+      internalID: -2206543794604278797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_65
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213b620e913a78450800000000000000
+      internalID: 6091016352572027666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_66
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0e939bca1acae70800000000000000
+      internalID: 9127848307987177683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_67
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6542d5f91e3e8e6d0800000000000000
+      internalID: -2960866196815272874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_68
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 1600
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1432b1f4669a80d60800000000000000
+      internalID: 7856715806826767169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_69
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da36c2b64387195a0800000000000000
+      internalID: -6516295019296693331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_70
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e13a2d639e313fd0800000000000000
+      internalID: -2364039526480203294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_71
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0c12013147ddaf0800000000000000
+      internalID: -370011969150664458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_72
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9362a58eb3e1dce40800000000000000
+      internalID: 5678227947834189369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_73
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f27cb35e509fdb70800000000000000
+      internalID: 8926011721277797111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_74
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efd7527751f22c50800000000000000
+      internalID: 6639134158580342760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4x_scaled_6x_pngcrushed_75
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3205d0a45c82506f0800000000000000
+      internalID: -719123737679671261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

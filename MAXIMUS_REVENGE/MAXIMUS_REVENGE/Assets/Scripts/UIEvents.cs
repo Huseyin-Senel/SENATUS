@@ -6,6 +6,10 @@ using DG.Tweening;
 
 public class UIEvents : MonoBehaviour
 {
+    private bool shopOn = false;
+
+    public Label label1, label2,label3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +19,43 @@ public class UIEvents : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (shopOn)
+            {
+                GameObject a = GameObject.Find("SellBuy");
+                a.transform.DOLocalMove(new Vector3(50,+1000,1),1f);
+                shopOn = false;
+            }
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            if (label1.active)
+            {
+                label1.active = false;
+            }
+            if (label2.active)
+            {
+                label2.active = false;
+            }
+            if (label3.active)
+            {
+                label3.active = false;
+
+                if (!shopOn)
+                {
+                    GameObject a = GameObject.Find("SellBuy");
+                    a.transform.DOLocalMove(new Vector3(50, -40, 1), 1f);
+                    shopOn = true;
+                }
+            }
+
+
+
+            
+        }
     }
 
 
