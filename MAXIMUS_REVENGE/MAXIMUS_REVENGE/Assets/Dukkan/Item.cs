@@ -14,8 +14,8 @@ public class Item : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IB
 
 
 
-    public GameObject clickHolderPrefab;
-    private GameObject realPrefab = null;
+    public GameObject referenceClickHolderPrefab;
+    private GameObject clickHolderPrefab = null;
 
 
     private void Awake()
@@ -75,7 +75,7 @@ public class Item : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IB
     public Types Tur { get => type; set => type = value; }
     public GameObject CurrentSlot { get => currentSlot; set => currentSlot = value; }
 
-    public void SetAll(string itemName, int power, Types tur, Sprite itemImage,int fiyat, GameObject currentSlot)
+    public void setAll(string itemName, int power, Types tur, Sprite itemImage,int fiyat, GameObject currentSlot)
     {
         this.itemName = itemName;
         this.power = power;
@@ -103,27 +103,27 @@ public class Item : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IB
             pos.x = pos.x + 200;
             pos.y = pos.y + -200;
 
-            realPrefab = Instantiate(clickHolderPrefab, pos, Quaternion.identity, transform);
-            realPrefab.GetComponent<ClickHolder>().SetItem(this.gameObject);
+            clickHolderPrefab = Instantiate(referenceClickHolderPrefab, pos, Quaternion.identity, transform);
+            clickHolderPrefab.GetComponent<ClickHolder>().setItem(this.gameObject);
         }
         
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (realPrefab != null)
+        if (clickHolderPrefab != null)
         {
-            Destroy(realPrefab);
-            realPrefab = null;
+            Destroy(clickHolderPrefab);
+            clickHolderPrefab = null;
         }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (realPrefab != null)
+        if (clickHolderPrefab != null)
         {
-            Destroy(realPrefab);
-            realPrefab = null;
+            Destroy(clickHolderPrefab);
+            clickHolderPrefab = null;
         }
 
         dragged = true;

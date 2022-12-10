@@ -7,6 +7,7 @@ using DG.Tweening;
 public class UIEvents : MonoBehaviour
 {
     private bool shopOn = false;
+    private bool collesiumOn = false;
 
     public Label label1, label2,label3;
 
@@ -27,23 +28,33 @@ public class UIEvents : MonoBehaviour
                 a.transform.DOLocalMove(new Vector3(50,+1000,1),1f);
                 shopOn = false;
             }
+
+            if (collesiumOn)
+            {
+                GameObject a = GameObject.Find("Collesium");
+                a.transform.DOLocalMove(new Vector3(0, +1000, 1), 1f);
+                collesiumOn = false;
+            }
         }
 
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (label1.active)
+            if (label1.characterIn)
             {
-                label1.active = false;
-            }
-            if (label2.active)
-            {
-                label2.active = false;
-            }
-            if (label3.active)
-            {
-                label3.active = false;
 
+            }
+            if (label2.characterIn)
+            {
+                if (!collesiumOn)
+                {
+                    GameObject a = GameObject.Find("Collesium");
+                    a.transform.DOLocalMove(new Vector3(0, -40, 1), 1f);
+                    collesiumOn = true;
+                }
+            }
+            if (label3.characterIn)
+            {
                 if (!shopOn)
                 {
                     GameObject a = GameObject.Find("SellBuy");

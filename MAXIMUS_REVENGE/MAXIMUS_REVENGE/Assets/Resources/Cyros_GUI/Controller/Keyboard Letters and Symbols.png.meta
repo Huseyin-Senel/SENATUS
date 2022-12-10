@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0cfba3ce1f040034fad4ea273a076a0b
+guid: 210c99324ebbe804ab9a29cb0cf77e33
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -430,10 +430,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 210
-        width: 13
-        height: 12
+        x: 8
+        y: 2098
+        width: 134
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -451,10 +451,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 210
-        width: 13
-        height: 12
+        x: 169
+        y: 2098
+        width: 132
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,10 +472,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 210
-        width: 13
-        height: 12
+        x: 329
+        y: 2098
+        width: 132
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -493,10 +493,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_3
       rect:
         serializedVersion: 2
-        x: 49
-        y: 210
-        width: 13
-        height: 12
+        x: 488
+        y: 2098
+        width: 133
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,10 +514,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_4
       rect:
         serializedVersion: 2
-        x: 65
-        y: 210
-        width: 13
-        height: 12
+        x: 648
+        y: 2098
+        width: 134
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -535,10 +535,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_5
       rect:
         serializedVersion: 2
-        x: 81
-        y: 210
-        width: 13
-        height: 12
+        x: 809
+        y: 2098
+        width: 132
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,10 +556,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_6
       rect:
         serializedVersion: 2
-        x: 97
-        y: 210
-        width: 13
-        height: 12
+        x: 969
+        y: 2098
+        width: 132
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -577,10 +577,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_7
       rect:
         serializedVersion: 2
-        x: 113
-        y: 210
-        width: 13
-        height: 12
+        x: 1128
+        y: 2098
+        width: 133
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -598,10 +598,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_8
       rect:
         serializedVersion: 2
-        x: 1
-        y: 194
-        width: 13
-        height: 12
+        x: 8
+        y: 1939
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -619,10 +619,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_9
       rect:
         serializedVersion: 2
-        x: 17
-        y: 194
-        width: 13
-        height: 12
+        x: 169
+        y: 1939
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +640,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_10
       rect:
         serializedVersion: 2
-        x: 33
-        y: 194
-        width: 13
-        height: 12
+        x: 329
+        y: 1939
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -661,10 +661,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_11
       rect:
         serializedVersion: 2
-        x: 49
-        y: 194
-        width: 13
-        height: 12
+        x: 488
+        y: 1939
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,10 +682,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_12
       rect:
         serializedVersion: 2
-        x: 65
-        y: 194
-        width: 13
-        height: 12
+        x: 648
+        y: 1939
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,10 +703,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_13
       rect:
         serializedVersion: 2
-        x: 81
-        y: 194
-        width: 13
-        height: 12
+        x: 809
+        y: 1939
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -724,10 +724,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_14
       rect:
         serializedVersion: 2
-        x: 97
-        y: 194
-        width: 13
-        height: 12
+        x: 969
+        y: 1939
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -745,10 +745,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_15
       rect:
         serializedVersion: 2
-        x: 113
-        y: 194
-        width: 13
-        height: 12
+        x: 1128
+        y: 1939
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -766,10 +766,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_16
       rect:
         serializedVersion: 2
-        x: 1
-        y: 178
-        width: 13
-        height: 12
+        x: 8
+        y: 1779
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -787,10 +787,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_17
       rect:
         serializedVersion: 2
-        x: 17
-        y: 178
-        width: 13
-        height: 12
+        x: 169
+        y: 1779
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -808,10 +808,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_18
       rect:
         serializedVersion: 2
-        x: 33
-        y: 178
-        width: 13
-        height: 12
+        x: 329
+        y: 1779
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -829,10 +829,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_19
       rect:
         serializedVersion: 2
-        x: 49
-        y: 178
-        width: 13
-        height: 12
+        x: 488
+        y: 1779
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -850,10 +850,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_20
       rect:
         serializedVersion: 2
-        x: 65
-        y: 178
-        width: 13
-        height: 12
+        x: 648
+        y: 1779
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -871,10 +871,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_21
       rect:
         serializedVersion: 2
-        x: 81
-        y: 178
-        width: 13
-        height: 12
+        x: 809
+        y: 1779
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -892,10 +892,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_22
       rect:
         serializedVersion: 2
-        x: 97
-        y: 178
-        width: 13
-        height: 12
+        x: 969
+        y: 1779
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -913,10 +913,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_23
       rect:
         serializedVersion: 2
-        x: 113
-        y: 178
-        width: 13
-        height: 12
+        x: 1128
+        y: 1779
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -934,10 +934,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_24
       rect:
         serializedVersion: 2
-        x: 1
-        y: 162
-        width: 13
-        height: 12
+        x: 8
+        y: 1618
+        width: 134
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -955,10 +955,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_25
       rect:
         serializedVersion: 2
-        x: 17
-        y: 162
-        width: 13
-        height: 12
+        x: 169
+        y: 1618
+        width: 132
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -976,10 +976,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_26
       rect:
         serializedVersion: 2
-        x: 33
-        y: 162
-        width: 13
-        height: 12
+        x: 329
+        y: 1618
+        width: 132
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -997,10 +997,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_27
       rect:
         serializedVersion: 2
-        x: 49
-        y: 162
-        width: 13
-        height: 12
+        x: 488
+        y: 1618
+        width: 133
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1018,10 +1018,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_28
       rect:
         serializedVersion: 2
-        x: 65
-        y: 162
-        width: 13
-        height: 12
+        x: 648
+        y: 1618
+        width: 134
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1039,10 +1039,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_29
       rect:
         serializedVersion: 2
-        x: 81
-        y: 162
-        width: 13
-        height: 12
+        x: 809
+        y: 1618
+        width: 132
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1060,10 +1060,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_30
       rect:
         serializedVersion: 2
-        x: 97
-        y: 162
-        width: 13
-        height: 12
+        x: 969
+        y: 1618
+        width: 132
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1081,10 +1081,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_31
       rect:
         serializedVersion: 2
-        x: 113
-        y: 162
-        width: 13
-        height: 12
+        x: 1128
+        y: 1618
+        width: 133
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,10 +1102,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_32
       rect:
         serializedVersion: 2
-        x: 1
-        y: 146
-        width: 13
-        height: 12
+        x: 8
+        y: 1459
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1123,10 +1123,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_33
       rect:
         serializedVersion: 2
-        x: 17
-        y: 146
-        width: 13
-        height: 12
+        x: 169
+        y: 1459
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1144,10 +1144,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_34
       rect:
         serializedVersion: 2
-        x: 33
-        y: 146
-        width: 13
-        height: 12
+        x: 329
+        y: 1459
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1165,10 +1165,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_35
       rect:
         serializedVersion: 2
-        x: 49
-        y: 146
-        width: 13
-        height: 12
+        x: 488
+        y: 1459
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1186,10 +1186,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_36
       rect:
         serializedVersion: 2
-        x: 65
-        y: 146
-        width: 13
-        height: 12
+        x: 648
+        y: 1459
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1207,10 +1207,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_37
       rect:
         serializedVersion: 2
-        x: 81
-        y: 146
-        width: 13
-        height: 12
+        x: 809
+        y: 1459
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1228,10 +1228,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_38
       rect:
         serializedVersion: 2
-        x: 97
-        y: 146
-        width: 13
-        height: 12
+        x: 969
+        y: 1459
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1249,10 +1249,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_39
       rect:
         serializedVersion: 2
-        x: 113
-        y: 146
-        width: 13
-        height: 12
+        x: 1128
+        y: 1459
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1270,10 +1270,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_40
       rect:
         serializedVersion: 2
-        x: 1
-        y: 130
-        width: 13
-        height: 12
+        x: 8
+        y: 1299
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1291,10 +1291,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_41
       rect:
         serializedVersion: 2
-        x: 17
-        y: 130
-        width: 13
-        height: 12
+        x: 169
+        y: 1299
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1312,10 +1312,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_42
       rect:
         serializedVersion: 2
-        x: 33
-        y: 130
-        width: 13
-        height: 12
+        x: 329
+        y: 1299
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1333,10 +1333,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_43
       rect:
         serializedVersion: 2
-        x: 49
-        y: 130
-        width: 13
-        height: 12
+        x: 488
+        y: 1299
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1354,10 +1354,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_44
       rect:
         serializedVersion: 2
-        x: 65
-        y: 130
-        width: 13
-        height: 12
+        x: 648
+        y: 1299
+        width: 134
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1375,10 +1375,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_45
       rect:
         serializedVersion: 2
-        x: 81
-        y: 130
-        width: 13
-        height: 12
+        x: 809
+        y: 1299
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1396,10 +1396,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_46
       rect:
         serializedVersion: 2
-        x: 97
-        y: 130
-        width: 13
-        height: 12
+        x: 969
+        y: 1299
+        width: 132
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1417,10 +1417,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_47
       rect:
         serializedVersion: 2
-        x: 113
-        y: 130
-        width: 13
-        height: 12
+        x: 1128
+        y: 1299
+        width: 133
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1438,10 +1438,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_48
       rect:
         serializedVersion: 2
-        x: 1
-        y: 114
-        width: 13
-        height: 12
+        x: 8
+        y: 1139
+        width: 134
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1459,10 +1459,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_49
       rect:
         serializedVersion: 2
-        x: 17
-        y: 114
-        width: 13
-        height: 12
+        x: 169
+        y: 1139
+        width: 132
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1480,10 +1480,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_50
       rect:
         serializedVersion: 2
-        x: 33
-        y: 114
-        width: 13
-        height: 12
+        x: 329
+        y: 1139
+        width: 132
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1501,10 +1501,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_51
       rect:
         serializedVersion: 2
-        x: 49
-        y: 114
-        width: 13
-        height: 12
+        x: 488
+        y: 1139
+        width: 133
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1522,10 +1522,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_52
       rect:
         serializedVersion: 2
-        x: 65
-        y: 114
-        width: 13
-        height: 12
+        x: 648
+        y: 1139
+        width: 134
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1543,10 +1543,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_53
       rect:
         serializedVersion: 2
-        x: 81
-        y: 114
-        width: 13
-        height: 12
+        x: 809
+        y: 1139
+        width: 132
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1564,10 +1564,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_54
       rect:
         serializedVersion: 2
-        x: 1
-        y: 98
-        width: 13
-        height: 11
+        x: 8
+        y: 978
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1585,10 +1585,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_55
       rect:
         serializedVersion: 2
-        x: 17
-        y: 98
-        width: 13
-        height: 11
+        x: 169
+        y: 978
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1606,10 +1606,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_56
       rect:
         serializedVersion: 2
-        x: 33
-        y: 98
-        width: 13
-        height: 11
+        x: 329
+        y: 978
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1627,10 +1627,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_57
       rect:
         serializedVersion: 2
-        x: 49
-        y: 98
-        width: 13
-        height: 11
+        x: 488
+        y: 978
+        width: 133
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1648,10 +1648,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_58
       rect:
         serializedVersion: 2
-        x: 65
-        y: 98
-        width: 13
-        height: 11
+        x: 648
+        y: 978
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1669,10 +1669,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_59
       rect:
         serializedVersion: 2
-        x: 81
-        y: 98
-        width: 13
-        height: 11
+        x: 809
+        y: 978
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1690,10 +1690,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_60
       rect:
         serializedVersion: 2
-        x: 97
-        y: 98
-        width: 13
-        height: 11
+        x: 969
+        y: 978
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1711,10 +1711,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_61
       rect:
         serializedVersion: 2
-        x: 113
-        y: 98
-        width: 13
-        height: 11
+        x: 1128
+        y: 978
+        width: 133
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1732,10 +1732,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_62
       rect:
         serializedVersion: 2
-        x: 1
-        y: 82
-        width: 13
-        height: 11
+        x: 8
+        y: 819
+        width: 134
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1753,10 +1753,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_63
       rect:
         serializedVersion: 2
-        x: 17
-        y: 82
-        width: 13
-        height: 11
+        x: 169
+        y: 819
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1774,10 +1774,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_64
       rect:
         serializedVersion: 2
-        x: 33
-        y: 82
-        width: 13
-        height: 11
+        x: 329
+        y: 819
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1795,10 +1795,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_65
       rect:
         serializedVersion: 2
-        x: 49
-        y: 82
-        width: 13
-        height: 11
+        x: 488
+        y: 819
+        width: 133
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1816,10 +1816,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_66
       rect:
         serializedVersion: 2
-        x: 65
-        y: 82
-        width: 13
-        height: 11
+        x: 648
+        y: 819
+        width: 134
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1837,10 +1837,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_67
       rect:
         serializedVersion: 2
-        x: 81
-        y: 82
-        width: 13
-        height: 11
+        x: 809
+        y: 819
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1858,10 +1858,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_68
       rect:
         serializedVersion: 2
-        x: 97
-        y: 82
-        width: 13
-        height: 11
+        x: 969
+        y: 819
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1879,10 +1879,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_69
       rect:
         serializedVersion: 2
-        x: 113
-        y: 82
-        width: 13
-        height: 11
+        x: 1128
+        y: 819
+        width: 133
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1900,10 +1900,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_70
       rect:
         serializedVersion: 2
-        x: 1
-        y: 66
-        width: 13
-        height: 11
+        x: 8
+        y: 659
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1921,10 +1921,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_71
       rect:
         serializedVersion: 2
-        x: 17
-        y: 66
-        width: 13
-        height: 11
+        x: 169
+        y: 659
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1942,10 +1942,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_72
       rect:
         serializedVersion: 2
-        x: 33
-        y: 66
-        width: 13
-        height: 11
+        x: 329
+        y: 659
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1963,10 +1963,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_73
       rect:
         serializedVersion: 2
-        x: 49
-        y: 66
-        width: 13
-        height: 11
+        x: 488
+        y: 659
+        width: 133
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1984,10 +1984,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_74
       rect:
         serializedVersion: 2
-        x: 65
-        y: 66
-        width: 13
-        height: 11
+        x: 648
+        y: 659
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2005,10 +2005,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_75
       rect:
         serializedVersion: 2
-        x: 81
-        y: 66
-        width: 13
-        height: 11
+        x: 809
+        y: 659
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2026,10 +2026,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_76
       rect:
         serializedVersion: 2
-        x: 97
-        y: 66
-        width: 13
-        height: 11
+        x: 969
+        y: 659
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2047,10 +2047,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_77
       rect:
         serializedVersion: 2
-        x: 113
-        y: 66
-        width: 13
-        height: 11
+        x: 1128
+        y: 659
+        width: 133
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2068,10 +2068,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_78
       rect:
         serializedVersion: 2
-        x: 1
-        y: 50
-        width: 13
-        height: 11
+        x: 8
+        y: 498
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2089,10 +2089,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_79
       rect:
         serializedVersion: 2
-        x: 17
-        y: 50
-        width: 13
-        height: 11
+        x: 169
+        y: 498
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2110,10 +2110,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_80
       rect:
         serializedVersion: 2
-        x: 33
-        y: 50
-        width: 13
-        height: 11
+        x: 329
+        y: 498
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2131,10 +2131,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_81
       rect:
         serializedVersion: 2
-        x: 49
-        y: 50
-        width: 13
-        height: 11
+        x: 488
+        y: 498
+        width: 133
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2152,10 +2152,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_82
       rect:
         serializedVersion: 2
-        x: 65
-        y: 50
-        width: 13
-        height: 11
+        x: 648
+        y: 498
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2173,10 +2173,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_83
       rect:
         serializedVersion: 2
-        x: 81
-        y: 50
-        width: 13
-        height: 11
+        x: 809
+        y: 498
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2194,10 +2194,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_84
       rect:
         serializedVersion: 2
-        x: 97
-        y: 50
-        width: 13
-        height: 11
+        x: 969
+        y: 498
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2215,10 +2215,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_85
       rect:
         serializedVersion: 2
-        x: 113
-        y: 50
-        width: 13
-        height: 11
+        x: 1128
+        y: 498
+        width: 133
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2236,10 +2236,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_86
       rect:
         serializedVersion: 2
-        x: 1
-        y: 34
-        width: 13
-        height: 11
+        x: 8
+        y: 339
+        width: 134
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2257,10 +2257,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_87
       rect:
         serializedVersion: 2
-        x: 17
-        y: 34
-        width: 13
-        height: 11
+        x: 169
+        y: 339
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2278,10 +2278,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_88
       rect:
         serializedVersion: 2
-        x: 33
-        y: 34
-        width: 13
-        height: 11
+        x: 329
+        y: 339
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2299,10 +2299,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_89
       rect:
         serializedVersion: 2
-        x: 49
-        y: 34
-        width: 13
-        height: 11
+        x: 488
+        y: 339
+        width: 133
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2320,10 +2320,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_90
       rect:
         serializedVersion: 2
-        x: 65
-        y: 34
-        width: 13
-        height: 11
+        x: 648
+        y: 339
+        width: 134
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2341,10 +2341,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_91
       rect:
         serializedVersion: 2
-        x: 81
-        y: 34
-        width: 13
-        height: 11
+        x: 809
+        y: 339
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2362,10 +2362,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_92
       rect:
         serializedVersion: 2
-        x: 97
-        y: 34
-        width: 13
-        height: 11
+        x: 969
+        y: 339
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2383,10 +2383,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_93
       rect:
         serializedVersion: 2
-        x: 113
-        y: 34
-        width: 13
-        height: 11
+        x: 1128
+        y: 339
+        width: 133
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2404,10 +2404,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_94
       rect:
         serializedVersion: 2
-        x: 1
-        y: 18
-        width: 13
-        height: 11
+        x: 8
+        y: 179
+        width: 134
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2425,10 +2425,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_95
       rect:
         serializedVersion: 2
-        x: 17
-        y: 18
-        width: 13
-        height: 11
+        x: 169
+        y: 179
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2446,10 +2446,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_96
       rect:
         serializedVersion: 2
-        x: 33
-        y: 18
-        width: 13
-        height: 11
+        x: 329
+        y: 179
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2467,10 +2467,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_97
       rect:
         serializedVersion: 2
-        x: 49
-        y: 18
-        width: 13
-        height: 11
+        x: 488
+        y: 179
+        width: 133
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2488,10 +2488,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_98
       rect:
         serializedVersion: 2
-        x: 65
-        y: 18
-        width: 13
-        height: 11
+        x: 648
+        y: 179
+        width: 134
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2509,10 +2509,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_99
       rect:
         serializedVersion: 2
-        x: 81
-        y: 18
-        width: 13
-        height: 11
+        x: 809
+        y: 179
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2530,10 +2530,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_100
       rect:
         serializedVersion: 2
-        x: 97
-        y: 18
-        width: 13
-        height: 11
+        x: 969
+        y: 179
+        width: 132
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2551,10 +2551,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_101
       rect:
         serializedVersion: 2
-        x: 113
-        y: 18
-        width: 13
-        height: 11
+        x: 1128
+        y: 179
+        width: 133
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2572,10 +2572,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_102
       rect:
         serializedVersion: 2
-        x: 1
-        y: 2
-        width: 13
-        height: 11
+        x: 8
+        y: 19
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2593,10 +2593,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_103
       rect:
         serializedVersion: 2
-        x: 17
-        y: 2
-        width: 13
-        height: 11
+        x: 169
+        y: 19
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2614,10 +2614,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_104
       rect:
         serializedVersion: 2
-        x: 33
-        y: 2
-        width: 13
-        height: 11
+        x: 329
+        y: 19
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2635,10 +2635,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_105
       rect:
         serializedVersion: 2
-        x: 49
-        y: 2
-        width: 13
-        height: 11
+        x: 488
+        y: 19
+        width: 133
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2656,10 +2656,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_106
       rect:
         serializedVersion: 2
-        x: 65
-        y: 2
-        width: 13
-        height: 11
+        x: 648
+        y: 19
+        width: 134
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2677,10 +2677,10 @@ TextureImporter:
       name: Keyboard Letters and Symbols_107
       rect:
         serializedVersion: 2
-        x: 81
-        y: 2
-        width: 13
-        height: 11
+        x: 809
+        y: 19
+        width: 132
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

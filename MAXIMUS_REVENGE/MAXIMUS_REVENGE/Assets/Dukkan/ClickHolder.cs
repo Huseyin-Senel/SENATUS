@@ -21,7 +21,7 @@ public class ClickHolder : MonoBehaviour
     public Sprite powerImagePot;
 
 
-    public void SetItem(GameObject item1)
+    public void setItem(GameObject item1)
     {
         Item item = item1.GetComponent<Item>();
 

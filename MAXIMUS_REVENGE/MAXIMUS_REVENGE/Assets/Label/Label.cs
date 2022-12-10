@@ -16,9 +16,12 @@ public class Label : MonoBehaviour
     public string str;
     public GameObject character;
     public GameObject triggerObject;
+    public Vector3 triggerObjectPos;
+    [SerializeField] public float scaleFactorMin;
+    [SerializeField] public float scaleFactorMax;
 
 
-    public bool active = false;
+    public bool characterIn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,13 @@ public class Label : MonoBehaviour
         child0 = gameObject.transform.GetChild(0).gameObject;
         child1 = gameObject.transform.GetChild(1).gameObject;
         tmp = child0.transform.GetChild(0).GetComponent<TextMeshPro>();
+
+
+        if (triggerObject != null)
+        {
+            triggerObjectPos = triggerObject.transform.localPosition;
+        }
+        
     }
 
     // Update is called once per frame
@@ -40,7 +50,7 @@ public class Label : MonoBehaviour
     {
         if (collision.gameObject.name == character.name)
         {    
-            active = true;
+            characterIn = true;
 
 
             child0.SetActive(true);
@@ -59,7 +69,7 @@ public class Label : MonoBehaviour
     {
         if (collision.gameObject.name == character.name)
         {
-            active = false;
+            characterIn = false;
 
 
             child0.SetActive(false);
@@ -87,15 +97,15 @@ public class Label : MonoBehaviour
 
     public void scaleUp(GameObject gameObj)
     {
-        gameObj.transform.DOScale(new Vector3(1f, 1f, 1f), 1);
-        gameObj.transform.DOLocalMoveY(-4.65f, 1);
+        gameObj.transform.DOScale(new Vector3(scaleFactorMax, scaleFactorMax, scaleFactorMax), 1);
+        gameObj.transform.DOLocalMoveY(triggerObjectPos.y+0.4f, 1);
         gameObj.GetComponent<SpriteRenderer>().DOColor(new Color(1f, 1f, 1f), 1);
     }
 
     public void scaleDown(GameObject gameObj)
     {
-        gameObj.transform.DOScale(new Vector3(0.9f, 0.9f, 0.9f), 1);
-        gameObj.transform.DOLocalMoveY(-5f, 1);
+        gameObj.transform.DOScale(new Vector3(scaleFactorMin, scaleFactorMin, scaleFactorMin), 1);
+        gameObj.transform.DOLocalMoveY(triggerObjectPos.y, 1);
         gameObj.GetComponent<SpriteRenderer>().DOColor(new Color(0.627f, 0.627f, 0.627f), 1);
     }
 

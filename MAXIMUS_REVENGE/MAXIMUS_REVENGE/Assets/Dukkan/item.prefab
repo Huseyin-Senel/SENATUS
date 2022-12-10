@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d700ee5c3f45c7c4f95a40290e09511c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickHolderPrefab: {fileID: 8505233216393901250, guid: 5341d27c186bced4d8eb9e644f9df703, type: 3}
+  referenceClickHolderPrefab: {fileID: 8505233216393901250, guid: 5341d27c186bced4d8eb9e644f9df703, type: 3}
 --- !u!225 &5218127998980477402
 CanvasGroup:
   m_ObjectHideFlags: 0
