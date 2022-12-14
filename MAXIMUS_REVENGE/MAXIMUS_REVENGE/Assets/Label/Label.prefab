@@ -161,7 +161,7 @@ RectTransform:
   m_GameObject: {fileID: 4272271214397526528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4272271214107364230}
   m_RootOrder: 0
@@ -259,8 +259,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 1
@@ -431,6 +431,9 @@ MonoBehaviour:
   str: 
   character: {fileID: 0}
   triggerObject: {fileID: 0}
+  triggerObjectPos: {x: 0, y: 0, z: 0}
+  scaleFactorMin: 0
+  scaleFactorMax: 0
   characterIn: 0
 --- !u!1 &7095530910400661113
 GameObject:

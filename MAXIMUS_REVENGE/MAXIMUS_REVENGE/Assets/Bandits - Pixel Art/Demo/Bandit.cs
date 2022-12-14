@@ -3,19 +3,39 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using System.IO.MemoryMappedFiles;
+using DG.Tweening;
+using static UnityEditor.PlayerSettings;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class Bandit : MonoBehaviour {
 
 
-    public bool right;
-    public int team = 0;
-    private int kat = 0;
+    public bool right;  
+    private int row = 0;
     public GameObject attackTarget;
     public GameObject jumpTarget;
     public bool satirdaKal = true;
     public bool move = true;
     Enviorment env;
+    Scene scene;
     private float ustSatirTimer = 1.1f;
+    private bool isAlive = true;
+    private GameObject attackCollider;
+    private AttackSensor attackSensor;
+
+    public GameObject hpObj;
+    public GameObject infoText;
+
+
+    public int damage;
+    public int health;
+    public int team = 0;
+
+    private int maxHealth;
+
+
+
+
 
 
     [SerializeField] float      m_speed = 4.0f;
@@ -37,44 +57,175 @@ public class Bandit : MonoBehaviour {
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
 
         env = GameObject.Find("Enviorment").GetComponent<Enviorment>();
+        scene = GameObject.Find("Enviorment").GetComponent<Scene>();
+        attackCollider = transform.Find("AttackCollider").gameObject;
+        attackSensor = transform.Find("AttackCollider").GetComponent<AttackSensor>();
+
+        maxHealth = health;
     }
-	
 
-	void Update () {
-        m_animator.SetInteger("AnimState", 0);
+    private bool hurt = false;
+    private float attackTimer = 1f;
+    void Update () {
 
-
-        if (!m_grounded && m_groundSensor.State())
+        if (attackTimer > 0)
         {
-            m_grounded = true;
-            m_animator.SetBool("Grounded", m_grounded);
+            attackTimer -= Time.deltaTime;
         }
-        if (m_grounded && !m_groundSensor.State())
+
+
+
+        if (isAlive)
         {
-            m_grounded = false;
-            m_animator.SetBool("Grounded", m_grounded);
+            m_animator.SetInteger("AnimState", 0);
+
+
+            if (!m_grounded && m_groundSensor.State())
+            {
+                m_grounded = true;
+                m_animator.SetBool("Grounded", m_grounded);
+            }
+            if (m_grounded && !m_groundSensor.State())
+            {
+                m_grounded = false;
+                m_animator.SetBool("Grounded", m_grounded);
+            }
+            m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
+
+
+
+
+
+            if (GetComponent<Rigidbody2D>().velocity.x == 0)
+            {
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            }
+            else
+            {
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
+
+
+
+
+
+            AIFindTarget();
+            AIFindPath();
         }
-        m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
 
 
+        
+    }
 
 
+    private void setCan(int can)
+    {
+        //-6,388  == %0
+        //0 == %100
 
-        if (GetComponent<Rigidbody2D>().velocity.x == 0)
+        float a = 6.388f / maxHealth;
+        float b = maxHealth - health;
+        hpObj.transform.localPosition = new Vector2(-(a * b), hpObj.transform.localPosition.y);
+
+    }
+
+    public void canlan(int team, int health, int damage)
+    {
+        if (team == 1)
         {
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f, 0f);
+            GetComponent<SpriteRenderer>().DOFade(1, 1);
         }
         else
         {
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 0f);
+            GetComponent<SpriteRenderer>().DOFade(1, 1);
         }
 
+        this.team = team;
+        this.health = health;
+        this.damage = damage;
 
-
-        AIFindTarget();
-        AIFindPath();
     }
+
+    private void attack()
+    {
+        if (attackTimer <= 0 && !hurt)
+        {
+            attackTimer = 1f;
+            m_animator.SetTrigger("Attack");
+
+            this.Wait(0.5f, ()=>{
+                if (!hurt)
+                {
+                    foreach (GameObject obj in attackSensor.objects)
+                    {
+                        if (obj.GetComponent<Bandit>() != null)
+                        {
+                            obj.GetComponent<Bandit>().takeDamage(damage, this, null);
+                        }
+                        else if (obj.GetComponent<Hero>() != null)
+                        {
+                            obj.GetComponent<Hero>().takeDamage(damage, this);
+                        }
+
+                    }
+                }
+                
+            });
+
+            
+        }
+            
+    }
+
+    public void takeDamage(int damage, Bandit bandit, Hero hero)
+    {
+        hurt = true;
+        m_animator.SetTrigger("Hurt");
+        this.Wait(1f, () => { hurt = false; });
+
+        Vector2 pos = new Vector2(transform.position.x, transform.position.y + 1.2f);
+        GameObject aa = Instantiate(infoText, pos, Quaternion.identity, transform);
+        aa.GetComponent<InfoText>().run(damage.ToString(),InfoText.Type.red);
+
+        health -= damage;
+        setCan(health);
+
+        if (health <= 0)
+        {
+            die(bandit,hero);
+        }
+    }
+
+    private void die(Bandit bandit, Hero hero)
+    {
+
+        isAlive = false;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+        GetComponent<BoxCollider2D>().isTrigger = true;
+        attackCollider.GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<SpriteRenderer>().DOFade(0f, 1f);
+
+
+        Debug.Log("Bandit: öldü");
+        if (hero != null)
+        {
+            scene.killCounts[0] += 1; 
+        }
+        else
+        {
+            scene.killCounts[bandit.team] += 1;
+        }
+
+        if (!scene.checkEnd())
+        {
+            scene.respawn(null, this);
+        }  
+    }
+
+
 
 
 
@@ -126,13 +277,16 @@ public class Bandit : MonoBehaviour {
         while (time > 0)
         {
             time -= Time.deltaTime;
-                 
-                if (inputX > 0)
-                    transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
-                else if (inputX < 0)
-                    transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
 
-                m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
+            if (inputX > 0) { 
+                transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+            }
+            else if (inputX < 0)
+            {
+                transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
+            }
+                    
+            m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
         }     
 
     }
@@ -147,7 +301,7 @@ public class Bandit : MonoBehaviour {
 
             if (clc < distance)
             {
-                if (gm.GetComponent<HeroKnight>() != null)
+                if (gm.GetComponent<Hero>() != null)
                 {
                     attackTarget = gm;
                     distance = clc;
@@ -191,9 +345,9 @@ public class Bandit : MonoBehaviour {
             yukariCik = false;
         }
 
-        kat = AIFindKat();
+        row = AIFindKat();
 
-        switch (kat)
+        switch (row)
         {
             case 0:
                 selectJumpTarget(env.Up0,env.Down0);
@@ -247,6 +401,11 @@ public class Bandit : MonoBehaviour {
                 else if (attackTarget.transform.position.x - 1.2f > this.transform.position.x)
                 {
                     AImoveSagSol(+1f);
+                }
+                else
+                {
+                    attack();
+                    
                 }
             }
         }
@@ -317,9 +476,14 @@ public class Bandit : MonoBehaviour {
     private void AImoveSagSol(float inputX)
     {
         if (inputX > 0)
+        {
             transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        }        
         else if (inputX < 0)
+        {
             transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
+        }
+            
 
         m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
 

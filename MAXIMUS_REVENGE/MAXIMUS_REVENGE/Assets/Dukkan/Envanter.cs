@@ -12,8 +12,10 @@ public class Envanter : MonoBehaviour
     public GameObject shiled, armor, bow, sword;
     public TextMeshProUGUI info, potText, armorText, attackText, moneyText;
 
+    private Hero hero;
+
     private int Carmor = 0;
-    private int Cattack = 0;
+    private int Cattack = 1;
 
     private int money = 1000;
     private int potCount= 0;
@@ -27,7 +29,7 @@ public class Envanter : MonoBehaviour
         attackText.text = Cattack.ToString();
         moneyText.text = money.ToString();
         potText.text = potCount.ToString();
-
+        hero = GameObject.Find("Hero").GetComponent<Hero>();
     }
 
 
@@ -51,6 +53,12 @@ public class Envanter : MonoBehaviour
                 slot.GetComponent<Slot>().setItem(null);
                 Destroy(itemObj);
 
+
+
+
+
+
+                hero.PotCount = potCount;
             }
             else
             {
@@ -77,6 +85,13 @@ public class Envanter : MonoBehaviour
                 }
 
                 item.changeSlot(slot);
+
+
+
+
+
+                hero.Armor = Carmor;
+                hero.Damage = Cattack;
             }
             else
             {
@@ -110,9 +125,22 @@ public class Envanter : MonoBehaviour
             item.changeSlot(slot);
             item.Fiyat = item.Fiyat * 2;
 
+
+
+
+
+
+
+            hero.Armor = Carmor;
+            hero.Damage = Cattack;
         }     
     }
 
+
+    public void saveInventory()
+    {
+
+    }
 
     public void infoSetText(string text)
     {

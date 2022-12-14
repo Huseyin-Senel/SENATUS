@@ -6,7 +6,7 @@ using TMPro;
 public class ClickHolderLevel : MonoBehaviour
 {
     // Start is called before the first frame update
-    public TextMeshProUGUI teamCount, teamPlayerCount, enemyHealth;
+    public TextMeshProUGUI teamCount, teamPlayerCount, enemyHealth, win;
 
 
     public void setItem(Level level)
@@ -14,5 +14,6 @@ public class ClickHolderLevel : MonoBehaviour
         teamCount.text = level.TeamCount.ToString();
         teamPlayerCount.text = level.TeamPlayerCount.ToString();
         enemyHealth.text = level.EnemyHealth.ToString();
+        win.text = level.KillCount.ToString();
     }
 }

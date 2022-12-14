@@ -11,10 +11,12 @@ public class UIEvents : MonoBehaviour
 
     public Label label1, label2,label3;
 
+    private HeroKnight characterScript;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        characterScript = GameObject.Find("HeroKnight").GetComponent<HeroKnight>();
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class UIEvents : MonoBehaviour
                 GameObject a = GameObject.Find("SellBuy");
                 a.transform.DOLocalMove(new Vector3(50,+1000,1),1f);
                 shopOn = false;
+                characterScript.active = true;
             }
 
             if (collesiumOn)
@@ -34,6 +37,7 @@ public class UIEvents : MonoBehaviour
                 GameObject a = GameObject.Find("Collesium");
                 a.transform.DOLocalMove(new Vector3(0, +1000, 1), 1f);
                 collesiumOn = false;
+                characterScript.active = true;
             }
         }
 
@@ -51,6 +55,7 @@ public class UIEvents : MonoBehaviour
                     GameObject a = GameObject.Find("Collesium");
                     a.transform.DOLocalMove(new Vector3(0, -40, 1), 1f);
                     collesiumOn = true;
+                    characterScript.active = false;
                 }
             }
             if (label3.characterIn)
@@ -60,6 +65,7 @@ public class UIEvents : MonoBehaviour
                     GameObject a = GameObject.Find("SellBuy");
                     a.transform.DOLocalMove(new Vector3(50, -40, 1), 1f);
                     shopOn = true;
+                    characterScript.active = false;
                 }
             }
 
