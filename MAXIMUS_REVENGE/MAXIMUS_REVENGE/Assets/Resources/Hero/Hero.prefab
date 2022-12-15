@@ -148,7 +148,7 @@ MonoBehaviour:
   maxHp: 100
   m_speed: 4
   m_jumpForce: 8
-  active: 1
+  active: 0
   inWar: 1
   directionLeft: 0
 --- !u!61 &6016811209580635873

@@ -26,8 +26,8 @@ public class Hero : MonoBehaviour
 
     private int health;
     private int armor;
-    private int damage=1;
-    private int potCount=2;
+    private int damage;
+    private int potCount;
 
     private const int damage2 = 20;
 
@@ -71,7 +71,6 @@ public class Hero : MonoBehaviour
         if (GameObject.Find("PotTxt") != null)
         {
             potTxt = GameObject.Find("PotTxt").GetComponent<TextMeshProUGUI>();
-            potTxt.text = potCount.ToString();
         }
 
         m_animator = GetComponent<Animator>();
@@ -189,16 +188,9 @@ public class Hero : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         GetComponent<SpriteRenderer>().DOFade(1, 1);
-        getvalues();
     }
 
 
-
-
-    private void getvalues()
-    {
-        //potcount
-    }
 
 
 
@@ -210,14 +202,17 @@ public class Hero : MonoBehaviour
         attackCollider.GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().DOFade(0f, 1f);
 
-
-
-        scene.killCounts[bandit.team] += 1;
-
-        if (!scene.checkEnd())
+        foreach (Transform child in transform)
         {
-            scene.respawn(this, null);
+            if (child.gameObject.GetComponent<SpriteRenderer>() != null)
+            {
+                child.gameObject.GetComponent<SpriteRenderer>().DOFade(0f, 1f);
+            }
         }
+
+
+        scene.KillCounter.increaseKill(bandit.team);
+        scene.respawn(this, null);
     }
 
     
@@ -231,7 +226,7 @@ public class Hero : MonoBehaviour
             {
                 if (obj.GetComponent<Bandit>() != null)
                 {
-                    obj.GetComponent<Bandit>().takeDamage(Damage * damage2, null, this);
+                    obj.GetComponent<Bandit>().takeDamage((Damage * (damage2/5))+damage2, null, this);
                 }
             }
 
@@ -346,5 +341,54 @@ public class Hero : MonoBehaviour
             m_animator.SetBool("Run", false);
         }
 
+    }
+
+
+
+    public void scriptRun(float inputX)
+    {
+
+        m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
+
+        if (inputX > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+
+            foreach (Transform child in transform)
+            {
+                if (child.gameObject.GetComponent<SpriteRenderer>() != null)
+                {
+                    child.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                }
+            }
+            directionLeft = false;
+            attackCollider.transform.localPosition = new Vector2(0.6f, attackCollider.transform.localPosition.y);
+
+        }
+        else if (inputX < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+            foreach (Transform child in transform)
+            {
+                if (child.gameObject.GetComponent<SpriteRenderer>() != null)
+                {
+                    child.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                }
+            }
+
+            directionLeft = true;
+            attackCollider.transform.localPosition = new Vector2(-0.6f, attackCollider.transform.localPosition.y);
+        }
+
+
+        if (Mathf.Abs(inputX) > Mathf.Epsilon)
+        {
+            m_animator.SetBool("Run", true);
+        }
+        //Idle
+        else
+        {
+            m_animator.SetBool("Run", false);
+        }
     }
 }

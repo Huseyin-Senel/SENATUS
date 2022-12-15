@@ -11,12 +11,33 @@ public class UIEvents : MonoBehaviour
 
     public Label label1, label2,label3;
 
-    private HeroKnight characterScript;
+    private Hero characterScript;
+
+
+    private Image sceneShadow;
 
     // Start is called before the first frame update
     void Start()
     {
-        characterScript = GameObject.Find("HeroKnight").GetComponent<HeroKnight>();
+        characterScript = GameObject.Find("Hero").GetComponent<Hero>();
+        sceneShadow = GameObject.Find("SceneShadow").GetComponent<Image>();
+        sceneShadow.DOFade(0, 2);
+        this.Wait(2f,() => { sceneShadow.enabled = false; });
+
+
+
+        if ()
+        {
+            GameObject menu = GameObject.Find("Menu");
+            menu.transform.localPosition = new Vector2(menu.transform.localPosition.x, 1080);
+
+            GameObject background = GameObject.Find("Shadow");
+            SpriteRenderer sr = background.GetComponent<SpriteRenderer>();
+            sr.color = new Color(0, 0, 0, 0.3f);
+
+            GameObject sound = GameObject.Find("Sound");
+            sound.transform.localPosition = new Vector2(sound.transform.localPosition.x, -100);
+        }
     }
 
     // Update is called once per frame
@@ -81,7 +102,7 @@ public class UIEvents : MonoBehaviour
     {
         GameObject menu = GameObject.Find("Menu");
         //menu.transform.DOMoveY(1500, 2);
-        menu.transform.DOLocalMoveY(600,2);
+        menu.transform.DOLocalMoveY(1080,2);
         //menu.transform.DOMoveY(1000, 2).SetEase(Ease.OutBounce);
 
 

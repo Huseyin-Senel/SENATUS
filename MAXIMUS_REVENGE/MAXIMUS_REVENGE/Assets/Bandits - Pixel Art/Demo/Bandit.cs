@@ -9,7 +9,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class Bandit : MonoBehaviour {
 
-
+    public bool active;
     public bool right;  
     private int row = 0;
     public GameObject attackTarget;
@@ -34,7 +34,7 @@ public class Bandit : MonoBehaviour {
     private int maxHealth;
 
 
-
+    private List<Color> colors = new List<Color>() { new Color(3f / 5f, 1f, 3f / 5f), new Color(1f, 3f / 5f, 3f / 5f), new Color(3f / 5f, 3f / 5f, 1f) };
 
 
 
@@ -73,9 +73,7 @@ public class Bandit : MonoBehaviour {
             attackTimer -= Time.deltaTime;
         }
 
-
-
-        if (isAlive)
+        if (isAlive && active)
         {
             m_animator.SetInteger("AnimState", 0);
 
@@ -92,10 +90,6 @@ public class Bandit : MonoBehaviour {
             }
             m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
 
-
-
-
-
             if (GetComponent<Rigidbody2D>().velocity.x == 0)
             {
                 GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
@@ -106,16 +100,9 @@ public class Bandit : MonoBehaviour {
                 GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             }
 
-
-
-
-
             AIFindTarget();
             AIFindPath();
-        }
-
-
-        
+        }    
     }
 
 
@@ -132,16 +119,11 @@ public class Bandit : MonoBehaviour {
 
     public void canlan(int team, int health, int damage)
     {
-        if (team == 1)
-        {
-            GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f, 0f);
-            GetComponent<SpriteRenderer>().DOFade(1, 1);
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 0f);
-            GetComponent<SpriteRenderer>().DOFade(1, 1);
-        }
+
+        GetComponent<SpriteRenderer>().color = colors[team-1];
+        GetComponent<SpriteRenderer>().DOFade(1, 1);
+
+
 
         this.team = team;
         this.health = health;
@@ -209,20 +191,16 @@ public class Bandit : MonoBehaviour {
         GetComponent<SpriteRenderer>().DOFade(0f, 1f);
 
 
-        Debug.Log("Bandit: öldü");
         if (hero != null)
         {
-            scene.killCounts[0] += 1; 
+            scene.KillCounter.increaseKill(0); 
         }
         else
         {
-            scene.killCounts[bandit.team] += 1;
+            scene.KillCounter.increaseKill(bandit.team);           
         }
 
-        if (!scene.checkEnd())
-        {
-            scene.respawn(null, this);
-        }  
+            scene.respawn(null, this);  
     }
 
 

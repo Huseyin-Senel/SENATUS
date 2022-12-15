@@ -22,6 +22,9 @@ public class Envanter : MonoBehaviour
 
 
     public int Money { get => money; set => money = value; }
+    public int PotCount { get => potCount; set => potCount = value; }
+    public int Carmor1 { get => Carmor; set => Carmor = value; }
+    public int Cattack1 { get => Cattack; set => Cattack = value; }
 
     void Start()
     {
@@ -52,10 +55,6 @@ public class Envanter : MonoBehaviour
                 item.changeSlot(slot);
                 slot.GetComponent<Slot>().setItem(null);
                 Destroy(itemObj);
-
-
-
-
 
 
                 hero.PotCount = potCount;
@@ -126,11 +125,6 @@ public class Envanter : MonoBehaviour
             item.Fiyat = item.Fiyat * 2;
 
 
-
-
-
-
-
             hero.Armor = Carmor;
             hero.Damage = Cattack;
         }     
@@ -139,7 +133,17 @@ public class Envanter : MonoBehaviour
 
     public void saveInventory()
     {
+        
 
+    }
+
+
+    public void refreshUI()
+    {
+        moneyText.text = money.ToString();
+        armorText.text = Carmor.ToString();
+        attackText.text = Cattack.ToString();
+        potText.text = potCount.ToString();
     }
 
     public void infoSetText(string text)

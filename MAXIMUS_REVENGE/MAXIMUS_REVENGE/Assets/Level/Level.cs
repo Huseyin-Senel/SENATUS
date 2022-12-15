@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -20,6 +21,7 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
     public TextMeshProUGUI levelText;
 
+    private Image sceneShadow;
 
 
     private int teamCount;
@@ -41,14 +43,36 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
     {
         Level1,
         Level2,
-        Level3
+        Level3,
+        Level4,
+        Level5,
+        Level6,
+        LevelBoss
     }
 
 
     private void Awake()
     {
         createLevel(this.level);
+        
     }
+
+
+    public void setAvaliable(bool avaliable)
+    {
+        if (avaliable)
+        {
+            shadow.color = new Color(0, 0, 0, 0);
+            lockObj.SetActive(false);
+        }
+        else
+        {
+            shadow.color = new Color(0, 0, 0, 0.5f);
+            lockObj.SetActive(true);
+        }
+        this.avaliable = avaliable; 
+    }
+
 
     private void createLevel(Levels level)
     {
@@ -79,6 +103,42 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
                 this.enemyDamage = 60;
                 this.killCount = 10;
                 levelText.text = "Level 3";
+                //this.level = level;
+                break;
+            case Levels.Level4:
+                this.teamCount = 3;
+                this.teamPlayerCount = 2;
+                this.enemyHealth = 150;
+                this.enemyDamage = 60;
+                this.killCount = 10;
+                levelText.text = "Level 4";
+                //this.level = level;
+                break;
+            case Levels.Level5:
+                this.teamCount = 3;
+                this.teamPlayerCount = 2;
+                this.enemyHealth = 150;
+                this.enemyDamage = 60;
+                this.killCount = 10;
+                levelText.text = "Level 5";
+                //this.level = level;
+                break;
+            case Levels.Level6:
+                this.teamCount = 3;
+                this.teamPlayerCount = 2;
+                this.enemyHealth = 150;
+                this.enemyDamage = 60;
+                this.killCount = 10;
+                levelText.text = "Level 6";
+                //this.level = level;
+                break;
+            case Levels.LevelBoss:
+                this.teamCount = 2;
+                this.teamPlayerCount = 1;
+                this.enemyHealth = 500;
+                this.enemyDamage = 60;
+                this.killCount = 1;
+                levelText.text = "Boss";
                 //this.level = level;
                 break;
             default:
@@ -126,10 +186,17 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Envanter envanter = GameObject.Find("Envanter").GetComponent<Envanter>();
-        envanter.saveInventory();
+        Scane2Events events = GameObject.Find("ScaneEvents").GetComponent<Scane2Events>();
+        events.setPlayerPrefs();
 
+
+        sceneShadow = GameObject.Find("SceneShadow").GetComponent<Image>();
+        sceneShadow.enabled = true;
+        sceneShadow.DOFade(1, 2);
         selectedLevel = this;
-        SceneManager.LoadScene(levelSceneName);
+
+
+        this.Wait(2.1f,()=>{ SceneManager.LoadScene(levelSceneName); });
+        
     }
 }

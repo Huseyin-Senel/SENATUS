@@ -58,11 +58,14 @@
     <Compile Include="Assets\Level\ClickHolderLevel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\infoText\InfoText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Bandits - Pixel Art\Demo\Bandit.cs" />
     <Compile Include="Assets\Scripts\WaitExtension.cs" />
+    <Compile Include="Assets\Scenes\Scene.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Dukkan\Dukkan.cs" />
+    <Compile Include="Assets\Resources\Hero\AttackSensor.cs" />
     <Compile Include="Assets\Scripts\Slider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\Sensor_HeroKnight.cs" />
@@ -112,9 +115,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scenes\Scene.cs" />
-    <Compile Include="Assets\Resources\Hero\AttackSensor.cs" />
-    <Compile Include="Assets\infoText\InfoText.cs" />
+    <Compile Include="Assets\KillCounter\KillCounter.cs" />
+    <Compile Include="Assets\Counter\Counter.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -814,14 +816,6 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{0B27D1F4-1F43-2B70-AF0B-B888419CC93E}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{1AC91D35-E73B-120F-EEB7-C0AFE89DD1C2}</Project>
-      <Name>NavMeshComponentsEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{DA63BA5A-1F17-31C8-D466-406C56844C03}</Project>
-      <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

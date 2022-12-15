@@ -15,11 +15,6 @@ public class Slot : MonoBehaviour, IDropHandler
     GameObject item = null;
 
 
-    private void Awake()
-    {
-        
-    }
-
 
 
     public void setItem(GameObject item)

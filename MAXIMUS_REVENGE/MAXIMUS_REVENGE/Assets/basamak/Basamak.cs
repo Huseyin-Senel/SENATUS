@@ -10,13 +10,11 @@ public class Basamak : MonoBehaviour
     [SerializeField] public float timeOfset = 0.5f;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         effector = GetComponent<PlatformEffector2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.S))
