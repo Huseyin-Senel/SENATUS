@@ -1,6 +1,7 @@
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Scane2Events : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class Scane2Events : MonoBehaviour
     private Hero hero;
     private Dukkan dukkan;
 
-
+    private static bool a = false;
     private float exitPoint;
 
     void Start()
@@ -35,13 +36,17 @@ public class Scane2Events : MonoBehaviour
         getPlayerPrefs();
 
 
-        if ()
+        if (a)
         {
             duvar1.GetComponent<BoxCollider2D>().enabled = true;
             character.GetComponent<Hero>().active = true;
             run = false;
 
             character.transform.localPosition = new Vector2(PlayerPrefs.GetInt("exitPoint"), character.transform.localPosition.y);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("exitPoint",-16);
         }
     }
     void Update()
@@ -75,6 +80,10 @@ public class Scane2Events : MonoBehaviour
             character.GetComponent<Hero>().active = true;
             run = false;
         });
+
+        a = true;
+
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public static void initilazePlayerPrefs()
@@ -229,6 +238,8 @@ public class Scane2Events : MonoBehaviour
 
     public void resetPlayerPrefs()
     {
+        GetComponent<AudioSource>().Play();
+
         PlayerPrefs.DeleteAll();
         initilazePlayerPrefs();
     }

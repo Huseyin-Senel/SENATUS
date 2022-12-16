@@ -26,6 +26,8 @@ public class Scene : MonoBehaviour
     private GameObject hero1;
 
 
+    private AudioSource win, lose;
+
     private int attack;
     private int armor;
     private int potCount;
@@ -38,6 +40,8 @@ public class Scene : MonoBehaviour
         winLose = GameObject.Find("WinLose").GetComponent<TextMeshProUGUI>();
         shadow = GameObject.Find("Shadow").GetComponent<Image>();
 
+        win = GetComponents<AudioSource>()[0];
+        lose = GetComponents<AudioSource>()[1];
 
         getPlayerPrefs();
         shadow.DOFade(0f,1f);
@@ -185,10 +189,13 @@ public class Scene : MonoBehaviour
             if (win)
             {
                 winLose.text = "Kazandin";
+                this.win.Play();
+
             }
             else
             {
                 winLose.text = "Kaybettin";
+                this.lose.Play();
             }
             winLose.DOFade(1f, 1f);
 

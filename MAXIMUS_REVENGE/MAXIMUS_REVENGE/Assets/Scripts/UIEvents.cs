@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class UIEvents : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class UIEvents : MonoBehaviour
 
     private Image sceneShadow;
 
+
+    private static bool a = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,7 @@ public class UIEvents : MonoBehaviour
 
 
 
-        if ()
+        if (a)
         {
             GameObject menu = GameObject.Find("Menu");
             menu.transform.localPosition = new Vector2(menu.transform.localPosition.x, 1080);
@@ -35,9 +38,10 @@ public class UIEvents : MonoBehaviour
             SpriteRenderer sr = background.GetComponent<SpriteRenderer>();
             sr.color = new Color(0, 0, 0, 0.3f);
 
-            GameObject sound = GameObject.Find("Sound");
-            sound.transform.localPosition = new Vector2(sound.transform.localPosition.x, -100);
+            GameObject reset = GameObject.Find("Reset");
+            reset.transform.localPosition = new Vector2(reset.transform.localPosition.x, -600);
         }
+        
     }
 
     // Update is called once per frame
@@ -47,6 +51,8 @@ public class UIEvents : MonoBehaviour
         {
             if (shopOn)
             {
+                GetComponent<AudioSource>().Play();
+
                 GameObject a = GameObject.Find("SellBuy");
                 a.transform.DOLocalMove(new Vector3(50,+1000,1),1f);
                 shopOn = false;
@@ -55,6 +61,8 @@ public class UIEvents : MonoBehaviour
 
             if (collesiumOn)
             {
+                GetComponent<AudioSource>().Play();
+
                 GameObject a = GameObject.Find("Collesium");
                 a.transform.DOLocalMove(new Vector3(0, +1000, 1), 1f);
                 collesiumOn = false;
@@ -67,26 +75,66 @@ public class UIEvents : MonoBehaviour
         {
             if (label1.characterIn)
             {
+                GetComponent<AudioSource>().Play();
 
+                if (PlayerPrefs.GetInt("levelBoss") != 0)
+                {
+
+                    Scane2Events events = GameObject.Find("ScaneEvents").GetComponent<Scane2Events>();
+                    events.setPlayerPrefs();
+
+
+                    sceneShadow = GameObject.Find("SceneShadow").GetComponent<Image>();
+                    sceneShadow.enabled = true;
+                    sceneShadow.DOFade(1, 2);
+
+                    Level level = new Level();
+                    level.TeamCount = 2;
+                    level.TeamPlayerCount = 1;
+                    level.EnemyHealth = 500;
+                    level.EnemyDamage = 60;
+                    level.KillCount = 1;
+
+                    Level.selectedLevel = level;
+                    
+
+
+                    this.Wait(2.1f, () => { SceneManager.LoadScene("LevelBoss"); });
+
+
+
+                }
+                else
+                {
+                    
+                    characterScript.typeText("henuz buna hazir degilim");
+                }
             }
             if (label2.characterIn)
             {
                 if (!collesiumOn)
                 {
+                    GetComponent<AudioSource>().Play();
+
+
                     GameObject a = GameObject.Find("Collesium");
                     a.transform.DOLocalMove(new Vector3(0, -40, 1), 1f);
                     collesiumOn = true;
                     characterScript.active = false;
+                    characterScript.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
                 }
             }
             if (label3.characterIn)
             {
                 if (!shopOn)
                 {
+                    GetComponent<AudioSource>().Play();
+
                     GameObject a = GameObject.Find("SellBuy");
                     a.transform.DOLocalMove(new Vector3(50, -40, 1), 1f);
                     shopOn = true;
                     characterScript.active = false;
+                    characterScript.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
                 }
             }
 
@@ -100,6 +148,9 @@ public class UIEvents : MonoBehaviour
 
     public void Play_Click()
     {
+
+        GetComponent<AudioSource>().Play();
+
         GameObject menu = GameObject.Find("Menu");
         //menu.transform.DOMoveY(1500, 2);
         menu.transform.DOLocalMoveY(1080,2);
@@ -114,8 +165,8 @@ public class UIEvents : MonoBehaviour
         //sr.color = color;
 
 
-        GameObject sound = GameObject.Find("Sound");
-        sound.transform.DOMoveY(-100, 2);
-
+        GameObject reset = GameObject.Find("Reset");
+        reset.transform.DOLocalMoveY(-600, 2);
+        a = true;
     }
 }

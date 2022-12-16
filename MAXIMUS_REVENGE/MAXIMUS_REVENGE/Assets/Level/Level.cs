@@ -23,6 +23,8 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
     private Image sceneShadow;
 
+    private AudioSource click;
+
 
     private int teamCount;
     private int teamPlayerCount;
@@ -55,6 +57,8 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
     {
         createLevel(this.level);
         
+        click = GetComponent<AudioSource>();
+
     }
 
 
@@ -82,16 +86,16 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
                 this.teamCount = 2;
                 this.teamPlayerCount = 1;
                 this.enemyHealth = 100;
-                this.enemyDamage = 36;
+                this.enemyDamage = 20;
                 this.killCount = 5;
                 levelText.text = "Level 1";
                 //this.level = level;
                 break;
             case Levels.Level2:
                 this.teamCount = 2;
-                this.teamPlayerCount = 3;
+                this.teamPlayerCount = 2;
                 this.enemyHealth = 100;
-                this.enemyDamage = 35;
+                this.enemyDamage = 20;
                 this.killCount = 7;
                 levelText.text = "Level 2";
                 //this.level = level;
@@ -99,9 +103,9 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
             case Levels.Level3:
                 this.teamCount = 3;
                 this.teamPlayerCount = 2;
-                this.enemyHealth = 150;
-                this.enemyDamage = 60;
-                this.killCount = 10;
+                this.enemyHealth = 100;
+                this.enemyDamage = 20;
+                this.killCount = 7;
                 levelText.text = "Level 3";
                 //this.level = level;
                 break;
@@ -110,7 +114,7 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
                 this.teamPlayerCount = 2;
                 this.enemyHealth = 150;
                 this.enemyDamage = 60;
-                this.killCount = 10;
+                this.killCount = 8;
                 levelText.text = "Level 4";
                 //this.level = level;
                 break;
@@ -119,7 +123,7 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
                 this.teamPlayerCount = 2;
                 this.enemyHealth = 150;
                 this.enemyDamage = 60;
-                this.killCount = 10;
+                this.killCount = 8;
                 levelText.text = "Level 5";
                 //this.level = level;
                 break;
@@ -128,7 +132,7 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
                 this.teamPlayerCount = 2;
                 this.enemyHealth = 150;
                 this.enemyDamage = 60;
-                this.killCount = 10;
+                this.killCount = 8;
                 levelText.text = "Level 6";
                 //this.level = level;
                 break;
@@ -164,6 +168,8 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
         if (avaliable)
         {
+            click.Play();
+
             Vector3 pos = transform.position;
             pos.x = pos.x + 200;
             pos.y = pos.y + -200;
@@ -186,6 +192,8 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        click.Play();
+
         Scane2Events events = GameObject.Find("ScaneEvents").GetComponent<Scane2Events>();
         events.setPlayerPrefs();
 

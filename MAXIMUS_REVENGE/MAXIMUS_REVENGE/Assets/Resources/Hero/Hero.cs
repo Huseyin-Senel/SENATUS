@@ -18,17 +18,23 @@ public class Hero : MonoBehaviour
     private UnityEngine.UI.Slider hpSlider;
     private TextMeshProUGUI potTxt;
 
-
-
-
     public GameObject infoText;
+
+    private TextMeshPro tmp;
+    private GameObject child0;
+
+
+    private AudioSource hit, block, walk, tossing, hit_hero, defence;
+
+
+
+    
 
 
     private int health;
     private int armor;
     private int damage;
     private int potCount;
-
     private const int damage2 = 20;
 
 
@@ -40,6 +46,7 @@ public class Hero : MonoBehaviour
     public bool active = true;
     public bool inWar = true;
     public bool directionLeft = false;
+    private bool isDefence = false;  
 
     public int Health { get => health; set => health = value; }
     public int Armor { get => armor; set => armor = value; }
@@ -79,6 +86,18 @@ public class Hero : MonoBehaviour
         m_attackSensor = transform.Find("AttackCollider").GetComponent<AttackSensor>();
         attackCollider = transform.Find("AttackCollider").gameObject;
         health = maxHp;
+        hit = GetComponents<AudioSource>()[0];
+        hit_hero = GetComponents<AudioSource>()[1];
+        block = GetComponents<AudioSource>()[2];
+        walk = GetComponents<AudioSource>()[3];
+        tossing = GetComponents<AudioSource>()[4];
+        defence = GetComponents<AudioSource>()[5];
+
+        child0 = transform.Find("back").gameObject;
+        tmp = child0.transform.Find("Text").gameObject.GetComponent<TextMeshPro>();
+
+
+
 
         canlan();
     }
@@ -128,28 +147,48 @@ public class Hero : MonoBehaviour
 
     private int calculeteDefence(int damage, Bandit bandit)
     {
+        int defence = 0;
+
         if (bandit.gameObject.transform.position.x > transform.position.x)
         {
-            if (directionLeft)
+            if (!directionLeft)
             {
-                return 0;
-            }
-            else
-            {   
-                return ((damage / 10) * armor);
+                if (isDefence)
+                {
+                    block.Play();
+
+                    defence = ((damage / 3) * armor);
+                }
+                else
+                {
+                    defence = ((damage / 10) * armor);
+                }
             }
         }
         else
         {
             if (directionLeft)
-            {               
-                return ((damage / 10) * armor);
-            }
-            else
             {
-                return 0;
+                if (isDefence)
+                {
+                    block.Play();
+
+                    defence = ((damage / 3) * armor);
+                }
+                else
+                {
+                    defence = ((damage / 10) * armor);
+                }
             }
         }
+
+        if (defence>damage)
+        {
+            defence = damage;
+        }
+
+        return defence;
+
     }
 
 
@@ -163,8 +202,16 @@ public class Hero : MonoBehaviour
 
 
         Vector2 pos = new Vector2(transform.position.x, transform.position.y + 0.6f);
-        GameObject aa = Instantiate(infoText, pos, Quaternion.identity, transform);
-        aa.GetComponent<InfoText>().run((damage-defence).ToString(), InfoText.Type.red);
+        GameObject aa;
+
+        if ((damage - defence)  > 0)
+        {
+            hit_hero.Play();
+            hit.Play();
+            aa = Instantiate(infoText, pos, Quaternion.identity, transform);
+            aa.GetComponent<InfoText>().run((damage - defence).ToString(), InfoText.Type.red);
+        }
+        
 
         if (defence>0)
         {
@@ -192,14 +239,12 @@ public class Hero : MonoBehaviour
 
 
 
-
-
     private void die(Bandit bandit)
     {
         active = false;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         GetComponent<BoxCollider2D>().enabled = false;
-        attackCollider.GetComponent<BoxCollider2D>().enabled = false;
+        //attackCollider.GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().DOFade(0f, 1f);
 
         foreach (Transform child in transform)
@@ -221,6 +266,8 @@ public class Hero : MonoBehaviour
         if (attackTimer <= 0 && !hurt)
         {
             attackTimer = 0.7f;
+
+            tossing.Play();
 
             foreach (GameObject obj in m_attackSensor.objects)
             {
@@ -263,12 +310,26 @@ public class Hero : MonoBehaviour
     private void movement()
     {
 
+
         m_animator.SetBool("JumpBool", !m_groundSensor.grounded);
 
 
         float inputX = Input.GetAxis("Horizontal");
-        //Debug.Log(inputX * m_speed);
-        m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
+        if (!isDefence)
+        {
+            m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
+        }
+
+
+
+        if (inputX != 0 && m_groundSensor.grounded && !walk.isPlaying)
+        {
+            walk.Play();
+        }
+        else if (walk.isPlaying)
+        {
+            walk.Pause();
+        }
 
 
         if (inputX > 0)
@@ -303,11 +364,10 @@ public class Hero : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown("w") && m_groundSensor.grounded)
+        if (Input.GetKeyDown("w") && m_groundSensor.grounded && !isDefence)
         {
             m_animator.SetTrigger("Jump");
             m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
-
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -318,21 +378,38 @@ public class Hero : MonoBehaviour
         // Block
         if (Input.GetMouseButtonDown(1))
         {
-            if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("Defence"))
-            {
-                //m_animator.SetTrigger("Defence");
-
-            }
+            //if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("Defence"))
+            //{
+            //    m_animator.SetTrigger("Defence");
+            //}
+            defence.Play();
             m_animator.SetBool("DefenceBool", true);
+            isDefence = true;
+
         }
         if (Input.GetMouseButtonUp(1))
         {
             m_animator.SetBool("DefenceBool", false);
+            isDefence = false;
         }
+
+
+        if (inputX == 0)
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
+
 
         //Run
         if (Mathf.Abs(inputX) > Mathf.Epsilon)
         {
+            
             m_animator.SetBool("Run", true);
         }
         //Idle
@@ -343,11 +420,8 @@ public class Hero : MonoBehaviour
 
     }
 
-
-
     public void scriptRun(float inputX)
     {
-
         m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
 
         if (inputX > 0)
@@ -390,5 +464,24 @@ public class Hero : MonoBehaviour
         {
             m_animator.SetBool("Run", false);
         }
+
+
+        
+
+    }
+
+
+    public void typeText(string str, float typeSpeed = 15f)
+    {
+        child0.SetActive(true);
+
+        string text = "";
+        DOTween.To(() => text, x => text = x, str, str.Length / typeSpeed).OnUpdate(() =>
+        {
+            tmp.text = text;
+        });
+
+        this.Wait((str.Length / typeSpeed)+1f, ()=>{ child0.SetActive(false); ; });
+
     }
 }

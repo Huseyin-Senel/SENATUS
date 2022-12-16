@@ -179,6 +179,8 @@ public class Item : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IB
 
     public void changeSlot(GameObject slot)
     {
+        
+
         m_RectTransform.position = slot.GetComponent<RectTransform>().position;
         CurrentSlot.GetComponent<Slot>().setItem(null);
 
@@ -211,6 +213,8 @@ public class Item : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IB
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        GetComponent<AudioSource>().Play();
+
         if (clickHolderPrefab != null)
         {
             Destroy(clickHolderPrefab);
@@ -224,6 +228,9 @@ public class Item : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IB
 
     public void OnEndDrag(PointerEventData eventData)
     {
+
+        GetComponent<AudioSource>().Play();
+
         m_CanvasGroup.blocksRaycasts = true;
         m_CanvasGroup.alpha = 1f;
         dragged = false;

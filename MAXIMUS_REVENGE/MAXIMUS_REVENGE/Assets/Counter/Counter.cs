@@ -10,6 +10,8 @@ public class Counter : MonoBehaviour
     //250
     public void run(string count)
     {
+        GetComponent<AudioSource>().Play();
+
         GetComponent<TextMeshProUGUI>().text = count;
         transform.DOLocalMove(new Vector2(transform.localPosition.x,250f),1f);
         GetComponent<TextMeshProUGUI>().DOFade(0,1f);

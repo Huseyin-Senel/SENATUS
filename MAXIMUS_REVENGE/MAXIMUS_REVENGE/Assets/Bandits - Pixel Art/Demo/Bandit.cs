@@ -34,6 +34,9 @@ public class Bandit : MonoBehaviour {
     private int maxHealth;
 
 
+    private AudioSource hit, block, walk, tossing, hit_hero;
+
+
     private List<Color> colors = new List<Color>() { new Color(3f / 5f, 1f, 3f / 5f), new Color(1f, 3f / 5f, 3f / 5f), new Color(3f / 5f, 3f / 5f, 1f) };
 
 
@@ -60,6 +63,11 @@ public class Bandit : MonoBehaviour {
         scene = GameObject.Find("Enviorment").GetComponent<Scene>();
         attackCollider = transform.Find("AttackCollider").gameObject;
         attackSensor = transform.Find("AttackCollider").GetComponent<AttackSensor>();
+        hit = GetComponents<AudioSource>()[0];
+        hit_hero = GetComponents<AudioSource>()[1];
+        block = GetComponents<AudioSource>()[2];
+        walk = GetComponents<AudioSource>()[3];
+        tossing = GetComponents<AudioSource>()[4];
 
         maxHealth = health;
     }
@@ -90,15 +98,7 @@ public class Bandit : MonoBehaviour {
             }
             m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
 
-            if (GetComponent<Rigidbody2D>().velocity.x == 0)
-            {
-                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-            }
-            else
-            {
-                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-            }
+            
 
             AIFindTarget();
             AIFindPath();
@@ -135,6 +135,8 @@ public class Bandit : MonoBehaviour {
     {
         if (attackTimer <= 0 && !hurt)
         {
+
+            tossing.Play();
             attackTimer = 1f;
             m_animator.SetTrigger("Attack");
 
@@ -164,6 +166,10 @@ public class Bandit : MonoBehaviour {
 
     public void takeDamage(int damage, Bandit bandit, Hero hero)
     {
+        hit_hero.Play();
+        hit.Play();
+
+
         hurt = true;
         m_animator.SetTrigger("Hurt");
         this.Wait(1f, () => { hurt = false; });
@@ -183,7 +189,7 @@ public class Bandit : MonoBehaviour {
 
     private void die(Bandit bandit, Hero hero)
     {
-
+        walk.Pause();
         isAlive = false;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         GetComponent<BoxCollider2D>().isTrigger = true;
@@ -380,14 +386,25 @@ public class Bandit : MonoBehaviour {
                 {
                     AImoveSagSol(+1f);
                 }
-                else
+                else if(attackTarget.transform.position.y > this.transform.position.y - 1f && attackTarget.transform.position.y < this.transform.position.y + 1f)
                 {
                     attack();
-                    
+                    walk.Pause();
+
+                    GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 }
             }
         }
-        
+
+
+        if (attackTarget.transform.position.x< this.transform.position.x)
+        {
+            transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        }
 
     }
 
@@ -453,6 +470,14 @@ public class Bandit : MonoBehaviour {
 
     private void AImoveSagSol(float inputX)
     {
+
+        if (!walk.isPlaying)
+        {
+            walk.Play();
+        }
+        
+
+
         if (inputX > 0)
         {
             transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
@@ -461,7 +486,12 @@ public class Bandit : MonoBehaviour {
         {
             transform.localScale = new Vector3(+1.0f, 1.0f, 1.0f);
         }
-            
+
+
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
+
 
         m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
 
@@ -470,13 +500,6 @@ public class Bandit : MonoBehaviour {
             m_animator.SetInteger("AnimState", 2);
 
     }
-
-
-
-
-
-
-
 
 
     private void movement()
