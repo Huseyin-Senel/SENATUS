@@ -241,7 +241,7 @@ public class Scene : MonoBehaviour
             if (hero != null)
             {
                 enviorment.allCharacters.Remove(hero.gameObject);
-                potCount = hero.gameObject.GetComponent<Hero>().PotCount;
+                potCount = hero.gameObject.GetComponent<Hero>().PotCount;                
 
                 this.Wait(1f, () =>
                 {
@@ -250,7 +250,6 @@ public class Scene : MonoBehaviour
                     hero1 = characterObj;
                     enviorment.allCharacters.Add(characterObj);
                     GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>().Follow = characterObj.transform;
-                    characterObj.GetComponent<Hero>().active = true;
                     characterObj.GetComponent<Hero>().active = true;
                     characterObj.GetComponent<Hero>().Armor = armor;
                     characterObj.GetComponent<Hero>().Damage = attack;
@@ -266,12 +265,16 @@ public class Scene : MonoBehaviour
 
                 this.Wait(1f, () =>
                 {
-                    Destroy(bandit.gameObject);
+                    if (bandit != null)
+                    {
+                        Destroy(bandit.gameObject);
+                    }
+                    
 
                     GameObject enemyObj = Instantiate(enemyPrefab, pos, Quaternion.identity, transform);
                     enviorment.allCharacters.Add(enemyObj);
                     Bandit bandit2 = enemyObj.GetComponent<Bandit>();
-                    bandit2.canlan(team, Level.selectedLevel.EnemyHealth, Level.selectedLevel.EnemyDamage);
+                    bandit2.canlan(team, Level.selectedLevel.EnemyHealth, Level.selectedLevel.EnemyDamage,Level.selectedLevel.Leveln);
                     bandit2.active = true;
                 });
             }
@@ -285,11 +288,13 @@ public class Scene : MonoBehaviour
         hero1 = characterObj;
         enviorment.allCharacters.Add(characterObj);
         GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>().Follow = characterObj.transform;
+
+
+        characterObj.GetComponent<Hero>().Armor = armor;
+        characterObj.GetComponent<Hero>().Damage = attack;
+        characterObj.GetComponent<Hero>().PotCount = potCount;
         this.Wait(4f, () => {
-            characterObj.GetComponent<Hero>().active = true;
-            characterObj.GetComponent<Hero>().Armor = armor;
-            characterObj.GetComponent<Hero>().Damage = attack;
-            characterObj.GetComponent<Hero>().PotCount = potCount;
+            characterObj.GetComponent<Hero>().active = true;           
         });
 
 
@@ -309,7 +314,7 @@ public class Scene : MonoBehaviour
                 }
                 enviorment.allCharacters.Add(enemyObj);
                 Bandit bandit = enemyObj.GetComponent<Bandit>();
-                bandit.canlan(i + 1, Level.selectedLevel.EnemyHealth, Level.selectedLevel.EnemyDamage);
+                bandit.canlan(i + 1, Level.selectedLevel.EnemyHealth, Level.selectedLevel.EnemyDamage, Level.selectedLevel.Leveln);
                 this.Wait(4f, () => {
                     bandit.active = true;
                 });

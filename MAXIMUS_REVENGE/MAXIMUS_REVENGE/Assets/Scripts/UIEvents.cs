@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.EventSystems;
 
 public class UIEvents : MonoBehaviour
 {
@@ -80,28 +82,9 @@ public class UIEvents : MonoBehaviour
                 if (PlayerPrefs.GetInt("levelBoss") != 0)
                 {
 
-                    Scane2Events events = GameObject.Find("ScaneEvents").GetComponent<Scane2Events>();
-                    events.setPlayerPrefs();
+                    Level boss= GameObject.Find("LevelBoss").GetComponent<Level>();
 
-
-                    sceneShadow = GameObject.Find("SceneShadow").GetComponent<Image>();
-                    sceneShadow.enabled = true;
-                    sceneShadow.DOFade(1, 2);
-
-                    Level level = new Level();
-                    level.TeamCount = 2;
-                    level.TeamPlayerCount = 1;
-                    level.EnemyHealth = 500;
-                    level.EnemyDamage = 60;
-                    level.KillCount = 1;
-
-                    Level.selectedLevel = level;
-                    
-
-
-                    this.Wait(2.1f, () => { SceneManager.LoadScene("LevelBoss"); });
-
-
+                    boss.OnPointerClick(new PointerEventData(EventSystem.current));
 
                 }
                 else

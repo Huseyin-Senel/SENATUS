@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 8626235447150646804}
   - component: {fileID: 2576663799062737221}
   m_Layer: 0
-  m_Name: LightBandit
+  m_Name: Boss
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,6 +66,7 @@ MonoBehaviour:
   damage: 0
   health: 0
   team: 0
+  isBoss: 1
   m_speed: 3.5
   m_jumpForce: 8.2
 --- !u!95 &95346456782871180
@@ -78,7 +79,7 @@ Animator:
   m_GameObject: {fileID: 1689866831511430}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b95265f99b6d90e438df1308a89c8bab, type: 2}
+  m_Controller: {fileID: 9100000, guid: 13a43e2a56e88e54c975d2d96afe2a2b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -127,7 +128,7 @@ SpriteRenderer:
   m_SortingLayerID: 1746707347
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
+  m_Sprite: {fileID: 8980042317091964510, guid: ada71aef63808f64091c534b679823bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -176,7 +177,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.5, y: 1.5}
+    oldSize: {x: 3.125, y: 1.71875}
     newSize: {x: 1.28, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -918,7 +919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772723928036446202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.3000001, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 0.1, y: 0.03, z: 1}
   m_Children:
   - {fileID: 8544242180024125202}

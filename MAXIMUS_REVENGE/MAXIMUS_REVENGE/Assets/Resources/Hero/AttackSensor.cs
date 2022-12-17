@@ -10,11 +10,14 @@ public class AttackSensor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!objects.Contains(collision.gameObject)) { objects.Add(collision.gameObject); }
+
+            if (!objects.Contains(collision.gameObject)) { objects.Add(collision.gameObject); }
+
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        objects.Remove(collision.gameObject);
+        objects.Remove(collision.gameObject);     
     }
 }

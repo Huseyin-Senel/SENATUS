@@ -2,10 +2,7 @@
 using System.Collections;
 using System;
 using System.Collections.Generic;
-using System.IO.MemoryMappedFiles;
 using DG.Tweening;
-using static UnityEditor.PlayerSettings;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class Bandit : MonoBehaviour {
 
@@ -26,12 +23,16 @@ public class Bandit : MonoBehaviour {
     public GameObject hpObj;
     public GameObject infoText;
 
+    public GameObject healthSprite;
+
 
     public int damage;
     public int health;
     public int team = 0;
 
     private int maxHealth;
+
+    public bool isBoss = false; 
 
 
     private AudioSource hit, block, walk, tossing, hit_hero;
@@ -117,11 +118,17 @@ public class Bandit : MonoBehaviour {
 
     }
 
-    public void canlan(int team, int health, int damage)
+    public void canlan(int team, int health, int damage,Level.Levels level)
     {
 
-        GetComponent<SpriteRenderer>().color = colors[team-1];
-        GetComponent<SpriteRenderer>().DOFade(1, 1);
+        if (!(level == Level.Levels.LevelBoss))
+        {
+            GetComponent<SpriteRenderer>().color = colors[team - 1];
+            GetComponent<SpriteRenderer>().DOFade(1, 1);
+        }
+
+
+        
 
 
 
@@ -136,14 +143,23 @@ public class Bandit : MonoBehaviour {
         if (attackTimer <= 0 && !hurt)
         {
 
-            tossing.Play();
+            
             attackTimer = 1f;
             m_animator.SetTrigger("Attack");
 
-            this.Wait(0.5f, ()=>{
+            float time = 0.5f;
+            if (isBoss)
+            {
+                time = 0.3f;
+            }
+
+            this.Wait(time, ()=>{
                 if (!hurt)
                 {
-                    foreach (GameObject obj in attackSensor.objects)
+                    tossing.Play();
+                    var clonedList = new List<GameObject>(attackSensor.objects);
+
+                    foreach (GameObject obj in clonedList)
                     {
                         if (obj.GetComponent<Bandit>() != null)
                         {
@@ -157,12 +173,11 @@ public class Bandit : MonoBehaviour {
                     }
                 }
                 
-            });
-
-            
-        }
-            
+            });      
+        }          
     }
+
+
 
     public void takeDamage(int damage, Bandit bandit, Hero hero)
     {
@@ -195,7 +210,7 @@ public class Bandit : MonoBehaviour {
         GetComponent<BoxCollider2D>().isTrigger = true;
         attackCollider.GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().DOFade(0f, 1f);
-
+        healthSprite.SetActive(false);
 
         if (hero != null)
         {
@@ -208,8 +223,6 @@ public class Bandit : MonoBehaviour {
 
             scene.respawn(null, this);  
     }
-
-
 
 
 

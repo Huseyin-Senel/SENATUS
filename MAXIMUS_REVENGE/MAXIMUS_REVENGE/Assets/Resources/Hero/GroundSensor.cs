@@ -22,6 +22,7 @@ public class GroundSensor : MonoBehaviour
     {
         if(collision.gameObject.tag == "ground" || collision.gameObject.tag == "enemy")
         {
+            //Debug.Log(gameObject.transform.parent.name + "  " + "true");
             grounded = true;
         }
     }
@@ -31,6 +32,7 @@ public class GroundSensor : MonoBehaviour
     {
         if (collision.gameObject.tag == "ground")
         {
+            //Debug.Log(gameObject.transform.parent.name + "  " + "false");
             grounded = false;
         }
     }

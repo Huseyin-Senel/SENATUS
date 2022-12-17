@@ -24,10 +24,11 @@ public class Hero : MonoBehaviour
     private GameObject child0;
 
 
-    private AudioSource hit, block, walk, tossing, hit_hero, defence;
+    private AudioSource hit, block, walk, tossing, hit_hero, defence, punch, block2;
 
 
-
+    public SpriteRenderer shield;
+    public SpriteRenderer sword;
     
 
 
@@ -92,6 +93,8 @@ public class Hero : MonoBehaviour
         walk = GetComponents<AudioSource>()[3];
         tossing = GetComponents<AudioSource>()[4];
         defence = GetComponents<AudioSource>()[5];
+        punch = GetComponents<AudioSource>()[6];
+        block2 = GetComponents<AudioSource>()[7];
 
         child0 = transform.Find("back").gameObject;
         tmp = child0.transform.Find("Text").gameObject.GetComponent<TextMeshPro>();
@@ -108,6 +111,16 @@ public class Hero : MonoBehaviour
     void Update()
     {
 
+        if (m_body2d.velocity.x != 0 && m_groundSensor.grounded && !walk.isPlaying) //if (inputX != 0 && m_groundSensor.grounded && !walk.isPlaying)
+        {
+            walk.Play();
+        }
+        else if (walk.isPlaying)
+        {
+            walk.Pause();
+        }
+
+
         if (active)
         {
             movement();
@@ -118,7 +131,25 @@ public class Hero : MonoBehaviour
             }
         }
 
-            
+
+        if (armor > 0 && !shield.enabled)
+        {
+            shield.enabled = true;
+        }
+        if (armor <= 0 && shield.enabled)
+        {
+            shield.enabled = false;
+        }
+
+
+        if (damage > 0 && !sword.enabled)
+        {
+            sword.enabled = true;
+        }
+        if (damage <= 0 && sword.enabled)
+        {
+            sword.enabled = false;
+        }
 
 
         if (attackTimer>0)
@@ -155,7 +186,15 @@ public class Hero : MonoBehaviour
             {
                 if (isDefence)
                 {
-                    block.Play();
+                    if (armor>0)
+                    {
+                        block.Play();
+                    }
+                    else
+                    {
+                        block2.Play();
+                    }
+          
 
                     defence = ((damage / 3) * armor);
                 }
@@ -171,7 +210,14 @@ public class Hero : MonoBehaviour
             {
                 if (isDefence)
                 {
-                    block.Play();
+                    if (armor > 0)
+                    {
+                        block.Play();
+                    }
+                    else
+                    {
+                        block2.Play();
+                    }
 
                     defence = ((damage / 3) * armor);
                 }
@@ -267,9 +313,22 @@ public class Hero : MonoBehaviour
         {
             attackTimer = 0.7f;
 
-            tossing.Play();
 
-            foreach (GameObject obj in m_attackSensor.objects)
+
+            if (damage>0)
+            {
+                tossing.Play();
+            }
+            else
+            {
+                punch.Play();
+            }
+
+            
+
+            var clonedList = new List<GameObject>(m_attackSensor.objects);
+
+            foreach (GameObject obj in clonedList)
             {
                 if (obj.GetComponent<Bandit>() != null)
                 {
@@ -322,14 +381,7 @@ public class Hero : MonoBehaviour
 
 
 
-        if (inputX != 0 && m_groundSensor.grounded && !walk.isPlaying)
-        {
-            walk.Play();
-        }
-        else if (walk.isPlaying)
-        {
-            walk.Pause();
-        }
+        //walk.play
 
 
         if (inputX > 0)

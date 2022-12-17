@@ -63,9 +63,11 @@ MonoBehaviour:
   move: 1
   hpObj: {fileID: 814109297817357066}
   infoText: {fileID: 2921576894010583271, guid: 559fa6ded3fd4c64ab4b7caf6396b718, type: 3}
+  healthSprite: {fileID: 1772723928036446202}
   damage: 0
   health: 0
   team: 0
+  isBoss: 0
   m_speed: 3.5
   m_jumpForce: 8.2
 --- !u!95 &95346456782871180

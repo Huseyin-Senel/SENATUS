@@ -184,6 +184,9 @@ public class Scane2Events : MonoBehaviour
         envanter.Cattack1 = Cattack;
         envanter.refreshUI();
 
+
+        hero.Armor = Carmor;
+        hero.Damage = Cattack;
         exitPoint = PlayerPrefs.GetInt("exitPoint");
 
 

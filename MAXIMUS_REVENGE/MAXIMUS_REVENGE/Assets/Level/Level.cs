@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
@@ -23,7 +21,7 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
     private Image sceneShadow;
 
-    private AudioSource click;
+    private AudioSource click,click2;
 
 
     private int teamCount;
@@ -54,11 +52,13 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
 
     private void Awake()
-    {
+    {     
+        click = GetComponents<AudioSource>()[0];
+        click2 = GetComponents<AudioSource>()[1];
+
         createLevel(this.level);
         
-        click = GetComponent<AudioSource>();
-
+        
     }
 
 
@@ -113,8 +113,8 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
                 this.teamCount = 3;
                 this.teamPlayerCount = 2;
                 this.enemyHealth = 150;
-                this.enemyDamage = 60;
-                this.killCount = 8;
+                this.enemyDamage = 20;
+                this.killCount = 9;
                 levelText.text = "Level 4";
                 //this.level = level;
                 break;
@@ -122,27 +122,27 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
                 this.teamCount = 3;
                 this.teamPlayerCount = 2;
                 this.enemyHealth = 150;
-                this.enemyDamage = 60;
-                this.killCount = 8;
+                this.enemyDamage = 30;
+                this.killCount = 9;
                 levelText.text = "Level 5";
                 //this.level = level;
                 break;
             case Levels.Level6:
                 this.teamCount = 3;
                 this.teamPlayerCount = 2;
-                this.enemyHealth = 150;
-                this.enemyDamage = 60;
-                this.killCount = 8;
+                this.enemyHealth = 200;
+                this.enemyDamage = 30;
+                this.killCount = 9;
                 levelText.text = "Level 6";
                 //this.level = level;
                 break;
             case Levels.LevelBoss:
                 this.teamCount = 2;
                 this.teamPlayerCount = 1;
-                this.enemyHealth = 500;
-                this.enemyDamage = 60;
+                this.enemyHealth = 1000;
+                this.enemyDamage = 70;
                 this.killCount = 1;
-                levelText.text = "Boss";
+                //levelText.text = "Boss";
                 //this.level = level;
                 break;
             default:
@@ -168,7 +168,7 @@ public class Level : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
 
         if (avaliable)
         {
-            click.Play();
+            click2.Play();
 
             Vector3 pos = transform.position;
             pos.x = pos.x + 200;

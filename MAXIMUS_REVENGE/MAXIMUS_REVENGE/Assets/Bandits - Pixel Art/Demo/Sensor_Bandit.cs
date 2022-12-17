@@ -21,12 +21,23 @@ public class Sensor_Bandit : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        m_ColCount++;
+        if (other.gameObject.tag == "ground" || other.gameObject.tag == "enemy")
+        {
+            
+            m_ColCount++;
+            //Debug.Log(gameObject.transform.parent.name + "  " + m_ColCount);
+        }
+        
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        m_ColCount--;
+        if (other.gameObject.tag == "ground" || other.gameObject.tag == "enemy")
+        {
+            m_ColCount--;
+            //Debug.Log(gameObject.transform.parent.name + "  " + m_ColCount);
+        }
+        
     }
 
     void Update()
