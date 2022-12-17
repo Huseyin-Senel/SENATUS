@@ -1,0 +1,22 @@
+sesler
+https://pixabay.com/sound-effects/
+https://mixkit.co/free-sound-effects/
+
+resimler
+https://store.steampowered.com/app/1552220/LakeSide/
+https://assetstore.unity.com/packages/2d/characters/hero-knight-pixel-art-165188
+https://assetstore.unity.com/packages/2d/characters/bandits-pixel-art-104130
+https://assetstore.unity.com/packages/2d/environments/pixel-tiles-177739
+https://assetstore.unity.com/packages/2d/gui/icons/2d-pixel-item-asset-pack-99645
+https://szadiart.itch.io/background-desert-mountains
+https://jeresikstus.itch.io/roman-and-germanic-weapons-and-armors-32x32
+https://jeresikstus.itch.io/roman-barbarian-roguelike-characters-32x32
+https://paperhatlizard.itch.io/cryos-mini-gui
+https://www.unrealengine.com/marketplace/ja/product/medieval-castle-house
+https://www.artstation.com/artwork/JeQJ3v
+
+font
+https://assetstore.unity.com/packages/2d/fonts/free-pixel-font-thaleah-140059
+
+kod kütüphanesi
+https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676
