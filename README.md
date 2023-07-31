@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca0541d22d38161ae897548f5a47f48d847f2da1ed823fd62c251059f699416a
-size 11
+![SENATUS](https://github.com/Huseyin-Senel/SENATUS/assets/96916049/15aca7e2-c091-41a2-bb45-82011f99fc76)
+![SENATUS](https://github.com/Huseyin-Senel/SENATUS/assets/96916049/3bd2c389-538d-4eb7-8a77-2e20d6cbac68)
+![SENATUS](https://github.com/Huseyin-Senel/SENATUS/assets/96916049/a7ebbe9d-a234-4040-9b7b-0e8bd59920f1)
+![SENATUS](https://github.com/Huseyin-Senel/SENATUS/assets/96916049/7995d58d-6f2b-4020-b506-4d972132ce17)
+![SENATUS](https://github.com/Huseyin-Senel/SENATUS/assets/96916049/71add42f-a1c1-4ee8-b474-226fa1376b41)
+![SENATUS](https://github.com/Huseyin-Senel/SENATUS/assets/96916049/c5f412ea-73c6-4c70-b626-c9ea9fb28e22)
